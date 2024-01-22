@@ -1,0 +1,46 @@
+#
+# index.yaml
+#
+html_title: "Artila Electronics"
+carousel:
+  - src: "images/2301_banner_Matrix-310_en.png"
+    link: https://embeddedcomputing.com/technology/iot/gateways/product-of-the-week-artilas-arduino-based-programmable-industrial-iot-gateway-the-matrix-310
+    alt: "Matrix-310"
+  - src: "images/2306_banner_PAC-6070_en.png"
+    link: http://www.artila.com/en/news/news-2023-06-01.html
+    alt: "PAC-6070"
+  - src: "images/2023_banner_taiwantrade.png"
+    link: https://artila.en.taiwantrade.com/
+    alt: "taiwantrade"
+
+page_title: "Welcome to Artila Electronics"
+introduction: "Artila Electronics is founded by professionals with more than 19 years of experience in industrial computer field. Artila focuses on developing easily-accessible, flexibly-programmed industrial ARM-based embedded Linux solutions, including embedded Linux single board computers / box computers / system-on-modules, and serial-to-Ethernet embedded modules. <br><br>Apart from standard products, Artila Electronics is highly willing to accept OEM / ODM requests to design and manufacture customized hardware and software."
+
+family: # 首頁最多6個family
+  - link: en/products/linux-arm-industrial-box-computer
+    title: Intelligent IoT Gateway
+    image: images/family/matrix2023.jpg
+  - link: en/products/linux-arm-system-on-module
+    title: IoT Device Platform
+    image: images/family/som2023.jpg
+  - link: en/products/industrial-iot-controller
+    title: Industrial IoT Controller
+    image: images/index_iot_controller.jpg
+  - link: en/products/remote-io
+    title: Remote I/O
+    image: images/family/rio.jpg
+  - link: en/products/industrial-communication-gateway
+    title: Industrial Communication Gateway
+    image: images/family/aport.jpg
+
+news_title: "What's New"
+newsList:
+  - index: "2023-09-18"
+    date: "2023-09-18"
+    title: "Revolutionizing Industrial Automation to Unveil an Ultimate Series of Touch Panel HMI Solutions"
+  - index: "2023-09-01"
+    date: "2023-09-01"
+    title: "Artila's Remarkable Achievement at the 2023 Taipei International Logistics & IoT Exhibition"
+  - index: "2023-06-01"
+    date: "2023-06-01"
+    title: "Artila Releases Linux-Ready NXP i.MX6ULL Cortex A7 Programmable Automation Controller PAC-6070"

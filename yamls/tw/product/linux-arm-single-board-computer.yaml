@@ -1,0 +1,13 @@
+html_title: "Linux ARM Single Board Computer"
+page_title: "Linux ARM Single Board Computer"
+banner:
+  img_src: "images/family/sbc2023.jpg"
+  heading: "Linux ARM Single Board Computer"
+  paragraph: "ARM-based Linux-ready single board computers with Ethernet ports, RS-232/422/485 ports, USB ports and digital inputs/outputs."
+
+products:
+  SBC-7530:
+    title: "SBC-7530"
+    description: "Linux-ready, a turnkey total off-the-shelf compact ARM-based Cortex-A7 solutions, Single Board Computer"
+    img_src: "images/products/SBC-7530.jpg"
+    link: tw/products/linux-arm-single-board-computer/sbc-7530

@@ -1,0 +1,13 @@
+html_title: "FreeRTOS Programmable Remote I/O Module"
+page_title: "FreeRTOS Programmable Remote I/O Module"
+banner:
+  image_src: "images/family/rio_pg.jpg"
+  heading: "FreeRTOS Programmable Remote I/O Module"
+  paragraph: "ARM-based Programmable Remote I/O Module with FreeRTOS operating system."
+
+products:
+  RIO-2010PG:
+    title: "RIO-2010PG"
+    description: "FreeRTOS Programmable Remote I/O Module"
+    img_src: "images/products/RIO-2010.jpg"
+    link: ./index.php?page=rio-2010pg

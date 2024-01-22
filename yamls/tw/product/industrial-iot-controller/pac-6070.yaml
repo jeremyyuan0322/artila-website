@@ -1,0 +1,77 @@
+# PAC-6070.yaml
+html_title: "PAC-6070"
+page_title: "PAC-6070"
+product: "PAC-6070"
+family: "Industrial IoT Controller"
+family_page: "industrial-iot-controller"
+description: NXP i.MX6ULL Cortex-A7 CPU, Linux-based Industrial Automation Controller
+image_source: images/products/PAC-6070.jpg
+image_alt: PAC-6070
+
+files:
+  Data Sheet: docs/PAC-6070/PAC-6070_Datasheet.pdf
+
+features:
+  title: "Features"
+  details:
+    - "Rugged Design for Industrial Automation Application"
+    - "Cost-Effective Linux Computing Platform"
+    - "NXP i.MX6ULL Arm Cortex-A7 CPU, Up to 800MHz"
+    - "1GB LvDDR3 SDRAM, 16GB eMMC"
+    - "8 x Opto-Isolated Digital Inputs, 8 x Relay Outputs"
+    - "5 x 24-bits A/D Channels"
+    - "Full Size miniPCIe Socket & Micro-SIM Slot"
+    - "Micro-SD Card Socket"
+    - "2 x 10/100Mbps Ethernet Interface"
+    - "USB port, RS-485 Serial Port"
+    - "+9~+48 VDC Wide-Range Power Input"
+    - "Dimension: 121.8mm x 204mm x 50mm"
+    - "DIN-Rail Mounting"
+
+datasheet:
+  - "hw_specifications"
+  - "sw_specifications"
+  - "ordering_information"
+
+hw_specifications:
+  title: "H/W Specifications"
+  sections:
+    "CPU / Memory":
+      - "CPU: NXP i.MX6ULL Cortex-A7 MPCore, Up to 800MHz"
+      - "SRAM: 1GB LvDDR3"
+      - "Flash: 16GB eMMC"
+    "Network Interface":
+      - "Type: 2 x 10/100Mbps Ethernet"
+    "Serial Port":
+      - "1 x RS-485 (1500Vrms isolation)"
+    "Digital Input":
+      - "8 x digital input channels"
+    "General":
+      - "Power Input: +9~+48 VDC"
+      - "Dimensions (WxLxH): 121.8 x 204 x 50mm"
+    "Console / Debug Port":
+      - "1 x 4-Pin box connector"
+    "SD Slot":
+      - "1x Micro-SD socket, SD 2.0 compliant"
+    "Expansion":
+      - "1 x miniPCIe slot, 1 x Micro-SIM socket"
+    "USB Interface":
+      - "1 x USB 2.0 Port, USB Type-A connector"
+    "Relay Output":
+      - "8 x relay output channels"
+    "Analog Input":
+      - "5 x 24-bits A/D channels"
+
+sw_specifications:
+  title: "S/W Specifications"
+  sections:
+    "Operation System":
+      - "Support Ubuntu and Embedded Linux, kernel 5.10.x (or up)"
+    "Software Development":
+      - "Toolchain: gcc 9.3.0 + glibc 2.31"
+
+ordering_information:
+  title: "Ordering Information"
+  sections:
+    "PAC-6070":
+      - "Linux-based Arm Cortex-A7 Industrial Automation Controller"

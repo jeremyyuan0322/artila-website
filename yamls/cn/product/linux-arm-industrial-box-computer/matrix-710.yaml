@@ -1,0 +1,117 @@
+# Matrix-710.yaml
+html_title: "Matrix-710"
+page_title: "Matrix-710"
+product: "Matrix-710"
+family: "Linux ARM Industrial Box Computer"
+family_page: "linux-arm-industrial-box-computer"
+description: "Linux-ready Cortex-A5 Industrial IoT Gateway"
+image_source: "images/products/Matrix-710.jpg"
+image_alt: "Matrix-710 Industrial IoT Gateway"
+
+files:
+  Data Sheet: "docs/Matrix-710/Matrix-710_Datasheet.pdf"
+  Hardware Guide: "docs/Matrix-710/Matrix-710_Hardware_Guide.pdf"
+  Software Guide: "docs/Matrix-710/Matrix-710_Software_Guide.pdf"
+  Resource Link: http://www.artila.com/download/imx6ul/linux/
+
+features:
+  title: "Features"
+  details:
+    - "ATMEL ATSAMA5D35 536MHz Cortex-A5 CPU"
+    - "Linux kernel 5.4.x with file system"
+    - "512MB LPDDR2 SDRAM"
+    - "16GB eMMC Flash and 8MB DataFlash for system backup"
+    - "Toolchain: gcc 9.3.0 + glibc 2.31"
+    - "1 x Gigabit Ethernet and 1 x 10/100Mbps Ethernet"
+    - "4 x USB host ports"
+    - "4 x isolation RS-485 serial ports and 4 x RS-485 serial ports"
+    - "2 x CAN ports"
+    - "1 x full size miniPCIe socket inside"
+    - "Ultra-low power consumption"
+
+datasheet:
+  - "hw_specifications"
+  - "sw_specifications"
+  - "ordering_information"
+
+hw_specifications:
+  title: "H/W Specifications"
+  sections:
+    "CPU / Memory":
+      - "CPU: ATMEL ATSAMA5D35 536MHz w/MMU"
+      - "SDRAM: 512MB, LPDDR2"
+      - "Flash: 16GB, eMMC"
+      - "DataFlash: 8MB, for system backup"
+    "Network Interface":
+      - "Type: 1 x Gigabit and 1 x 10/100Mbps Ethernet"
+      - "Connector Type: RJ45"
+    "TTY (Serial) Ports":
+      - "Port 1, 2, 3, 4: Isolated RS-485 (2500Vrms isolation)"
+      - "Port 5, 6, 7, 8: RS-485"
+      - "Direction Control: Auto, by hardware"
+      - "Connector: Terminal block"
+    "TTY (Serial) Port Parameters":
+      - "Baud Rate: Up to 921.6Kbps"
+      - "Parity: None, Even, Odd, Mark, Space"
+      - "Data Bits: 5, 6, 7, 8"
+      - "Stop Bits: 1, 1.5, 2"
+      - "Flow Control: RTS / CTS, XON / XOFF, None"
+    "CAN Bus Ports":
+      - "Type: 2 x CAN bus 2.0 A/B compliant ports"
+      - "Speed: Up to 1Mbps"
+      - "Isolation: 2500Vrms"
+    "Console / Debug Ports":
+      - "Support microUSB console port"
+      - "Serial console port (inside the box)"
+    "USB 2.0 Host Interface":
+      - "Host Ports: 4"
+      - "Supports 480Mbps hi-speed mode"
+    "SD Slot":
+      - "1 x Micro-SD socket"
+      - "SD 2.0 Compliant, support SDHC"
+      - "Storage capacity: support up to 128G"
+    "Expansion Slot":
+      - "1 x miniPCIe socket"
+      - "Supports Full-size / half-size"
+    "General":
+      - "Watchdog: Yes"
+      - "Real-Time Clock (RTC): Yes, backup by super capacitor"
+      - "Buzzer: Yes"
+      - "Power Input Voltage: +9~+48VDC (terminal block)"
+      - "Typical Consumption: 12VDC@500mA"
+      - "Dimensions (W x L x H): 166 x 103 x 35mm (6.5 x 4.0 x 1.37in)"
+      - "Operating Temperature: 0~70°C (32~158°F)"
+      - "Regulation: CE Class A, FCC Class A"
+      - "Installation: Wall mounting, DIN-rail mounting (with optional kit)"
+
+sw_specifications:
+  title: "S/W Specifications"
+  sections:
+    "Operation System":
+      - "Linux kernel 5.4.x"
+      - "Supports bootup from eMMC or SD card"
+      - "Supports backup from SD card or USB device"
+      - "Boot Loader: Barebox"
+      - "File System: EXT4/ETX3/ETX2, VFAT/FAT, NFS"
+    "Software Development":
+      - "Toolchain: gcc 9.3.x + glibc 2.31"
+      - "Supports in-place C/C++ code compilation"
+    "Package Management":
+      - "Package repository: Artila self-maintained repository"
+      - "Command: Using standard apt-get command"
+    "Popular Packages":
+      - "Web server: Apache/Nginx/Lighttpd"
+      - "Database: MySQL/SQLite3/PostgreSQL"
+      - "Script Language: PHP/Python/Perl/NodeJS"
+      - "Text editor: vim/nano/sed"
+      - "Administration: Webmin"
+
+ordering_information:
+  title: "Ordering Information"
+  sections:
+    "Matrix-710":
+      - "Linux-ready Cortex-A5 536MHz Industrial IoT Gateway with 512MB SDRAM, 16GB eMMC Flash"
+    "DK-35A (36-DK35A-000)":
+      - "DIN RAIL Mounting Kit"
+    "PWR-12V-1A (31-62100-000)":
+      - "110~240VAC to 12VDC 1A Power Adapter"

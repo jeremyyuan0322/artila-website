@@ -1,0 +1,13 @@
+html_title: "Linux ARM Industrial Box Computer"
+page_title: "Linux ARM Industrial Box Computer"
+banner:
+  img_src: "images/index_iot_controller.jpg"
+  heading: "Industrial IoT Controller"
+  paragraph: "ARM-based Linux-ready PAC (programmable automation controller) supporting analog inputs, isolated digital inputs and high-drive digital outputs."
+
+products:
+  PAC-6070:
+    title: "PAC-6070"
+    description: "NXP i.MX6ULL Cortex-A7 CPU, Linux-based Industrial Automation Controller"
+    img_src: "images/products/PAC-6070.jpg"
+    link: cn/products/industrial-iot-controller/pac-6070

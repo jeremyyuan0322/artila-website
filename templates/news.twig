@@ -1,0 +1,23 @@
+{# newsList.twig #}
+
+{% extends "/skeleton/base.twig" %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="bg-secondary text-white mb-4 p-2">
+      <h1>{{ page_title }}</h1>
+    </div>
+
+    <!-- News Table -->
+    <table class="table align-middle">
+      <tbody>
+        {% for news in newsList %}
+          <tr>
+            <td class="text-primary">{{ news.date }}</td>
+            <td><a class="text-black" href="{{lang}}/news/{{ news.index }}">{{ news.title }}</a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

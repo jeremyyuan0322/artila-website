@@ -1,0 +1,80 @@
+{# product.twig #}
+
+{% extends "skeleton/base.twig" %}
+
+{# style #}
+{% block style %}
+{{ parent() }}
+/*accordion*/
+.btn-toggle-accordion {
+    background: transparent;
+    border: none;
+}
+.accordion-body ul {
+    list-style: none; /* 移除列表项前的圆点 */
+    padding: 0; /* 移除默认的内边距 */
+}
+
+.accordion-body ul li {
+    border-bottom: 1px solid #ccc; /* 每个列表项下添加横线 */
+    padding: 8px 0; /* 添加一些内边距 */
+}
+
+.accordion-body ul li:last-child {
+    border-bottom: none; /* 移除最后一个列表项下的横线 */
+}
+
+.accordion-collapse {
+    /*accordion-collapse animation*/
+    transition: height 0.3s ease-in-out;
+}
+/*accordion*/
+.card img {
+    max-width: 300px;
+}
+{% endblock %}
+
+
+{% block breadcrumb %}
+  {% include 'partial/breadcrumb.twig' %}
+{% endblock %}
+
+{% block page_title %}
+<div class="container-fluid p-2 bg-secondary text-white">
+    <h3>{{ page_title }}</h3>
+    <p>{{ description }}</p>
+</div>
+{% endblock %}
+
+{% block content %}
+  {% include 'partial/productBox.twig' %}
+{% endblock %}
+
+{% block script %}
+{{ parent() }}
+<script>
+document.querySelectorAll('.btn-toggle-accordion').forEach(function(button) {
+    button.addEventListener('click', function() {
+        const accordionId = this.getAttribute('data-accordion-id');
+        const accordion = document.getElementById(accordionId);
+        const isCollapsed = this.querySelector('.collapseIcon') == null;
+
+        accordion.querySelectorAll('.accordion-collapse').forEach(collapse => {
+            if (isCollapsed) {
+                new bootstrap.Collapse(collapse, { toggle: false }).show();
+            } else {
+                new bootstrap.Collapse(collapse, { toggle: false }).hide();
+            }
+        });
+
+        if (isCollapsed) {
+            this.innerHTML = '<img src="icon/arrows-collapse.svg" alt="collapse" class="collapseIcon"/>Collapse all</button>';
+        } else {
+            this.innerHTML = '<img src="icon/arrows-expand.svg" alt="expand" class="expandIcon"/>Expand all</button>';
+        }
+    });
+});
+</script>
+
+
+{% endblock %}

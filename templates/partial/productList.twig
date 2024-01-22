@@ -1,0 +1,24 @@
+{# partial template productList.twig #}
+<div class="container my-5">
+	<div class="card mb-3 shadow-0">
+		<div class="row g-0">
+			<!-- 图片部分 -->
+			<div class="col-md-5 order-md-2 d-flex align-items-center justify-content-center">
+				<img src="{{ banner.img_src }}" alt="{{ banner.heading }}" class="img-fluid">
+			</div>
+			<!-- 文本部分 -->
+			<div class="col-md-7 order-md-1">
+				<div class="card-body">
+					<h2 class="card-title">{{ banner.heading }}</h2>
+					<p class="card-text">{{ banner.paragraph }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container mt-3">
+	{% for card in products %}
+		{% include 'partial/card_horizontal.twig' %}
+	{% endfor %}
+</div>

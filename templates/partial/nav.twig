@@ -1,0 +1,60 @@
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+	<div
+		class="container-fluid">
+		<!-- Navbar brand -->
+		<a class="navbar-brand me-2" href="{{ brand_link }}">
+			<img src="{{ brand_img }}" height="16" alt="Logo" loading="lazy"/>
+		</a>
+
+		<!-- Toggle button -->
+		<button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarButtonsToggle">
+			<i class="fas fa-bars"></i>
+		</button>
+
+		<!-- Collapsible wrapper -->
+		<div
+			class="collapse navbar-collapse" id="navbarButtonsToggle">
+			<!-- Left links -->
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				{% for item in nav %}
+					{% if item.dropdown is defined %}
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="{{ item.link }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								{{ item.caption }}
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								{% for dropdown_item in item.dropdown %}
+									<li>
+										<a class="dropdown-item" href="{{ dropdown_item.link }}">{{ dropdown_item.caption }}</a>
+									</li>
+								{% endfor %}
+							</ul>
+						</li>
+					{% else %}
+						<li class="nav-item">
+							<a class="nav-link" href="{{ item.link }}">{{ item.caption }}</a>
+						</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+			<!-- Left links -->
+		</div>
+		<!-- Collapsible wrapper -->
+
+		<!-- Language dropdown -->
+		<div class="dropdown language">
+			<a data-mdb-dropdown-init class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="languageDropdown">
+				<i class="fas fa-earth-americas"></i>
+			</a>
+			<ul class="dropdown-menu dropdown-menu-end">
+				{% for lang in langs %}
+					<li>
+						<a class="dropdown-item" href="{{ lang.link }}">{{ lang.caption }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<!-- Language dropdown -->
+	</div>
+	<!-- Container wrapper -->
+</nav>

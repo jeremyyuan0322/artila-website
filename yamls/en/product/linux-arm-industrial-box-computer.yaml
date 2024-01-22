@@ -1,0 +1,61 @@
+html_title: "Linux ARM Industrial Box Computer"
+page_title: "Linux ARM Industrial Box Computer"
+banner:
+  img_src: "images/family/artila-iot-gateway.jpg"
+  heading: "Linux ARM Industrial Box Computer"
+  paragraph: "ARM-based Linux-ready industrial box computers with multiple Ethernet ports, RS-232/422/485 ports, USB ports and digital I/Os. Truly industrial design, fanless, no cable and no moving parts inside."
+
+products:
+  Matrix-752:
+    title: "Matrix-752"
+    features: # 3 features
+      - "Cortex-A7"
+      - "2 Serial Ports"
+      - "2DI and 2DO"
+    img_src: "images/products/Matrix-752.jpg"
+    link: en/products/linux-arm-industrial-box-computer/matrix-752
+
+  Matrix-700:
+    title: "Matrix-700"
+    features:
+      - "Cortex-A7"
+      - "2 Serial Ports"
+      - "2DI and 2DO"
+    img_src: "images/products/Matrix-700.jpg"
+    link: en/products/linux-arm-industrial-box-computer/matrix-700
+  
+  Matrix-702:
+    title: "Matrix-702"
+    features:
+      - "Cortex-A7"
+      - "2 Serial Ports"
+      - "2DI and 2DO"
+    img_src: "images/products/Matrix-702.jpg"
+    link: en/products/linux-arm-industrial-box-computer/matrix-702
+  
+  Matrix-704:
+    title: "Matrix-704"
+    features:
+      - "Cortex-A7"
+      - "2 Serial Ports"
+      - "2DI and 2DO"
+    img_src: "images/products/Matrix-704.jpg"
+    link: en/products/linux-arm-industrial-box-computer/matrix-704
+  
+  Matrix-710:
+    title: "Matrix-710"
+    features:
+      - "Cortex-A7"
+      - "2 Serial Ports"
+      - "2DI and 2DO"
+    img_src: "images/products/Matrix-710.jpg"
+    link: en/products/linux-arm-industrial-box-computer/matrix-710
+  
+  Matrix-713:
+    title: "Matrix-713"
+    features:
+      - "Cortex-A7"
+      - "2 Serial Ports"
+      - "2DI and 2DO"
+    img_src: "images/products/Matrix-713.jpg"
+    link: en/products/linux-arm-industrial-box-computer/matrix-713

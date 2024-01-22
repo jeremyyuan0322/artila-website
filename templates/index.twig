@@ -1,0 +1,65 @@
+{# index.twig #}
+
+{% extends "skeleton/base.twig" %}
+
+{% block style %}
+	{{ parent() }}
+	.card img {
+		max-height: 200px;
+		width: auto;
+		object-fit: cover;
+	}
+	.card .view {
+		height: 200px;
+		width: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.card .card-title, .card .card-text{
+		text-align: center;
+	}
+{% endblock %}
+
+
+{% block content %}
+
+	<!-- Carousel -->
+	{% include 'partial/carousel.twig' %}
+	{# 首页的family #}
+	<div class="container my-5">
+		<div>
+			<h2 class="my-3">{{ page_title }}</h2>
+			<p>{{ introduction|raw }}</p>
+		</div>
+
+		<!-- product index -->
+		<div class="row">
+			{% for card in family %}
+				<div class="col-lg mb-4">
+					{% include 'partial/card_vertical.twig' %}
+				</div>
+			{% endfor %}
+		</div>
+		<!-- product index end -->
+		
+		<!-- news -->
+		<h2 class="my-3">{{ news_title }}</h2>
+		<div class="card">
+			<ul class="list-group list-group-light">
+			{% for news in newsList %}
+				<li class="list-group-item px-3 pb-0">{{ news.title }}
+					<div class="hover-overlay">
+						<a href="{{ lang }}/news/{{ news.index }}">
+							<div class="mask"></div>
+						</a>
+					</div>
+					<p class="mt-2 text-black-50">{{ news.date }}</p>
+				</li>
+			{% endfor %}
+			</ul>
+		</div>
+		<!-- news end -->
+	</div>
+
+{% endblock %}

@@ -1,0 +1,87 @@
+{# twig #}
+
+{% extends "/skeleton/base.twig" %}
+
+{% block style %}
+	{{ parent() }}
+  @media (max-width: 768px) {
+    iframe {
+      max-width: 342px;
+    }
+	}
+  
+{% endblock %}
+
+{% block content %}
+<!-- Worldwide Offices Section -->
+<div class="container my-5">
+  <div class="bg-secondary text-white mb-4 p-2">
+    <h1>{{ page_title }}</h1>
+  </div>
+
+  <h2 class="mb-3">{{ worldwide_offices.title }}</h2>
+  
+  <div class="card mb-4">
+    <div class="row g-0">
+      <!-- Left side - Office Info -->
+      <div class="col-md-6">
+        <div class="card-body">
+          <p class="card-title"><strong class="card-title">{{ worldwide_offices.headquarter.name }}</strong></p>      
+          <p class="card-text">Address: {{ worldwide_offices.headquarter.address }}</p>
+          <p class="card-text">Tel: {{ worldwide_offices.headquarter.Tel }}</p>
+          <p class="card-text">Fax: {{ worldwide_offices.headquarter.Fax }}</p>
+          {% for email in worldwide_offices.headquarter.email %}
+            <p class="card-text">{{ email.point }}:
+              <a href="mailto:{{ email.address }}">{{ email.address }}</a>
+            </p>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Right side - Google Map -->
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <div class="map-responsive">
+          <!-- Replace `your_google_map_embed_link` with your actual Google Map embed link -->
+          <iframe 
+            src="{{ worldwide_offices.headquarter.map_src }}" 
+            width="400" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+     </div>
+     </div>
+  </div>
+</div>
+
+
+<!-- Worldwide Distributors Section -->
+<div class="container my-5">
+  <h2 class="">{{ worldwide_distributors.title }}</h2>
+  {% for region in worldwide_distributors.regions %}
+    {% set region_info = attribute(_context, region) %}
+    <div class="card mt-3">
+      <div class="card-body">
+        <h3 class="card-title">{{ region_info.title }}</h3>
+        {% for distributor in region_info.distributors %}
+          <div class="mb-3">
+            <p class="border-top border-2 pt-3">
+              <strong>
+                <a href="{{ distributor.link }}" target="_blank">{{ distributor.name }}</a>
+              </strong>
+            </p>
+            <p>Tel: {{ distributor.Tel }}</p>
+            {% if distributor.Fax %}
+              <p>Fax: {{ distributor.Fax }}</p>
+            {% endif %}
+            <p>Email: <a href="mailto:{{ distributor.Email }}">{{ distributor.Email }}</a>
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

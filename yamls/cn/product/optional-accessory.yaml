@@ -1,0 +1,69 @@
+html_title: "Optional Accessory"
+page_title: "Optional Accessory"
+banner:
+  img_src: "images/products/91-R45F9-150.jpg"
+  heading: "Optional Accessory"
+  paragraph: "Explore our range of optional accessories to enhance your product experience."
+
+products:
+  CB-RJ45F9-150:
+    title: "CB-RJ45F9-150 (91-R45F9-150)"
+    description: "Serial Cable (RJ45 to DB9 Female, 150cm)"
+    img_src: "images/products/91-R45F9-150.jpg"
+    model_no:
+      - "Matrix Series"
+      - "PAC Series"
+
+  CB-RJ2CON-100:
+    title: "CB-RJ2CON-100 (91-RJCON-100)"
+    description: "Console Cable (RJ45 to DB9 Female, 100cm)"
+    img_src: "images/products/91-RJCON-100.jpg"
+    model_no:
+      - "Matrix-500, Matrix-504,Matrix-510, Matrix-514"
+      - "Aport-212"
+
+  CB-F10M9-20:
+    title: "CB-F10M9-20 (91-0P9M9-001)"
+    description: "Console Cable (10Pin Header to DB9 Male, 20cm)"
+    img_src: "images/products/91-0P9M9-001.jpg"
+    model_no:
+      - "Matrix-513, Matrix-516, Matrix-518, Matrix-522"
+      - "PAC-5010, PAC-5070"
+      - "RIO-2010, RIO-2014, RIO-2015"
+
+  CB-DBCON-100:
+    title: "CB-DBCON-100 (91-DBCON-100)"
+    description: "Console Cable (DB9 Female to DB9 Female, 100cm)"
+    img_src: "images/products/91-DBCON-100.jpg"
+    model_no:
+      - "Matrix-512"
+
+  CB-PHDF9-050:
+    title: "CB-PHDF9-050 (91-PHDF9-050)"
+    description: "Console Cable (Wafer Box to DB9 Female, 50cm)"
+    img_src: "images/products/91-PHDF9-050.jpg"
+    model_no:
+      - "Matrix-752 / 700 / 702 / 704 / 713, Matrix-505"
+      - "M-502, M-503, M-X6ULL-B, M-A5D35, SBC-7530"
+      - "PAC-4000, PAC-4010, PAC-4070, PAC-6070"
+
+  DK-35A:
+    title: "DK-35A (36-DK35A-000)"
+    description: "DIN Rail Mounting Kit"
+    img_src: "images/products/DK-35A.jpg"
+    model_no:
+      - "Matrix-500 / 504 / 505 / 510, Matrix-512 / 513 / 514 / 516, Matrix-518 / 522 / 604 / 605, Matrix-700/ 702 / 704 / 710 / 713 / 752"
+      - "Aport-211S, Aport-211W, Aport-212"
+      - "RIO-2017, RIO-2018"
+
+  PWR-12V-1A:
+    title: "PWR-12V-1A"
+    description: "100~240VAC to 12VDC 1A Power Adaptor"
+    img_src: "images/products/PWR-12V-1A1.jpg"
+    model_no:
+      - "Matrix-500, Matrix-504, Matrix-505, Matrix-513"
+      - "Matrix-7** Series"
+      - "Matrix-310"
+      - "Aport-211S, Aport-211W, Aport-212"
+      - "PAC-4000, PAC-4010, PAC-4070"
+      - "RIO-2010, RIO-2017, RIO-2018"

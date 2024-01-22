@@ -1,0 +1,82 @@
+html_title: "Enhance Energy Efficiency of Commercial Refrigerated Cabinets"
+page_title: "Enhance Energy Efficiency of Commercial Refrigerated Cabinets"
+
+image: "images/application_banner.png"
+title: "Enhance Energy Efficiency of Commercial Refrigerated Cabinets" # h2
+subtitle: "Artila Industrial IoT Solution in Hypermarket Cold Chain Application Case Sharing" # h3
+
+content:
+  - type: "header"
+    level: 3
+    text: "Application Introduction"
+
+  - type: "main_image" # float-start
+    src: "images/solution/supermarket_app.png"
+    alt: "Supermarket Application"
+
+  - type: "paragraph"
+    text: "Energy and Environment have become issues of concern for the public. In today's energy-constrained era, all industries are actively seeking related energy-saving solutions."
+
+  - type: "paragraph"
+    text: "Since hypermarket / Supermarkets consume the most energy in commercial buildings. Refrigeration and air-conditioning equipment consume more than 50% of the store's electricity respectively, and the refrigeration and refrigeration equipment that consumes the most energy account for the total energy of the commercial sector."
+
+  - type: "paragraph"
+    text: "Industrial IoT technologies focus on the processes of sensing, control monitoring, and remote communication, and by combing these technologies with intelligent software that performs information integration and data analysis, which provides a solution to enhance energy efficiency in hypermarkets and supermarkets is to use smart technologies that can monitor and optimize the performance of refrigerating and air-conditioning systems."
+
+  - type: "image"
+    src: "images/app/Cloud_Based_AI.png"
+    alt: "Cloud-Based AI for Energy Efficiency"
+    section_end: true # if define then border-bottom
+
+  - type: "header"
+    level: 3
+    text: "Artila's Product & Advantage"
+
+  - type: "paragraph"
+    text: "Artila's cold chain management solution spans meter, temperature/humidity sensors' data to Linux-based Industrial IoT gateways and the gateway uploads the data to the cloud. Through HMI and IoT controller for configuration and command setting platform Real-time monitoring and management of edge equipment and system operation status, including refrigerated cabinets equipment supervision and diagnosis, processing unit efficiency and abnormal alarm push broadcast, in order to achieve cost reduction and efficiency increase."
+
+  - type: "header"
+    level: 3
+    text: "Artila Solution of Enhancing Energy Efficiency of Commercial Refrigerated Cabinets:"
+    style: "border-bottom border-2;"
+  
+  - type: "list"
+    items:
+      - "Meter / Temperature Recording"
+      - "Cloud-based Data Visualization"
+      - "AI-defrost"
+      - "Failure Prediction"
+      - "Alert Notification"
+  
+  - type: "header"
+    level: 3
+    text: "Product Features:"
+  
+  - type: "product" # card
+    products:
+      - title: "Matrix-310"
+        link: "./index.php?page=matrix310"
+        description: "Arduino-Based Programmable Industrial IoT Gateway"
+        image: "images/index_iot_controller.jpg"
+        alt: "Matrix-310"
+      - title: "Matrix-752"
+        link: "./index.php?page=matrix752"
+        description: "Linux-ready Cortex-A7 Integrated Industrial IoT Gateway"
+        image: "images/family/matrix2023.jpg"
+        alt: "Matrix-752"
+    section_end: true # if define then border-bottom
+
+  - type: "header"
+    level: 3
+    text: "The Solution Description"
+  
+  - type: "paragraph"
+    text: "Artila's industrial IoT solution can provide real-time visibility and insights into the energy consumption and performance of different devices and systems in a hypermarket or supermarket. This can help the owners and managers identify and address any issues or anomalies, as well as benchmark and compare their energy performance with other stores or industry standards."
+
+  - type: "header"
+    level: 3
+    text: "Diagram"
+    
+  - type: "image"
+    src: "images/app/IESS-.jpg"
+    alt: "Application Diagram"

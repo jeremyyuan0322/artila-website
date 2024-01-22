@@ -1,0 +1,72 @@
+# Matrix-704.yaml
+html_title: "Matrix-704"
+page_title: "Matrix-704"
+product: "Matrix-704"
+family: "Linux ARM Industrial Box Computer"
+family_page: "linux-arm-industrial-box-computer"
+description: "Linux-ready Cortex-A5 Surge-Protected Industrial IoT Gateway"
+image_source: "images/products/Matrix-704.jpg"
+image_alt: "Matrix-704 Linux ARM Industrial Box Computer"
+
+files:
+  Data Sheet: "docs/Matrix-704/Matrix-704_Datasheet.pdf"
+  Software Guide: "docs/Matrix-704/Matrix-704_Software_Guide.pdf"
+  Resource Link: http://www.artila.com/download/imx6ul/linux/
+
+features:
+  title: "Features"
+  details:
+    - "ATMEL Cortex-A5 ATSAMA5D35 536MHz CPU"
+    - "Linux kernel 5.4.x with file system"
+    - "Toolchain gcc 9.30 + glibc 2.31"
+    - "512MB LPDDR2 SDRAM, 16GB eMMC Flash"
+    - "Input Voltage: +9V~+48Vdc (terminal block)"
+    - "1 x Gigabit Ethernet and 1 x 10/100Mbps Ethernet"
+    - "1 x full size miniPCIe socket inside, 1 x Micro-SIM slot inside"
+    - "2 x Antenna through SMA connector holes reserved"
+    - "1 x Micro-SD card inside for data backup"
+    - "4 x RS-485 serial ports with Surge protection"
+    - "Real-time clock (RTC): Yes"
+    - "Watchdog: Yes"
+    - "Dimensions (W x H x D): 140 x 119.5 x 35.2mm (5.5 x 4.7 x 1.38in)"
+
+datasheet:
+  - "hw_specifications"
+  - "ordering_information"
+
+hw_specifications:
+  title: "H/W Specifications"
+  sections:
+    "CPU / Memory":
+      - "CPU: ATMEL ATSAMA5D35 536MHz w/MMU"
+      - "SDRAM: 512MB, LPDDR2"
+      - "Flash: 16GB, eMMC"
+    "Network Interface":
+      - "Type: 1 x Gigabit and 1 x 10/100Mbps Ethernet"
+      - "Protection: 1.5KV magnetic isolation"
+      - "Connector Type: RJ45"
+    "USB 2.0 Host Interface":
+      - "Host Ports: 1"
+      - "Supports 480Mbps hi-speed mode"
+    "Console / Debug Ports":
+      - "Support microUSB console port"
+      - "Serial console port (inside the box)"
+    "TTY (Serial) Port":
+      - "4 x Surge-protected RS-485 (No isolation)"
+      - "Optional: 4 x Isolated / Surge-protected RS-485 (2500Vrms isolation)"
+      - "Direction Control: Auto, by hardware"
+      - "Connector: Terminal block"
+    "TTY (Serial) Port Parameters":
+      - "Baud Rate: Up to 921.6Kbps"
+      - "Parity: None, Even, Odd, Mark, Space"
+      - "Data Bits: 5, 6, 7, 8"
+      - "Stop Bits: 1, 1.5, 2"
+      - "Flow Control: RTS / CTS, XON / XOFF, None"
+
+ordering_information:
+  title: "Ordering Information"
+  sections:
+    "Matrix-704":
+      - "Linux-ready Cortex-A5 536 MHz Surge-protected Industrial IoT Gateway with four Surge-protected RS-485 serial ports"
+    "Matrix-704i":
+      - "Linux-ready Cortex-A5 536 MHz Industrial IoT Gateway with four Isolated / Surge-protected RS-485 serial ports"

@@ -1,0 +1,74 @@
+# Aport-211S.yaml
+page_title: "Aport-211S"
+product: "Aport-211S"
+family: "Industrial Communication Gateway"
+family_page: "industrial-communication-gateway"
+description: "Single-port Serial-to-Ethernet Gateway"
+image_source: images/products/Aport-211W.jpg
+image_alt: Aport-211S
+
+files:
+  Data Sheet: docs/Aport-211S/Aport-211S_Datasheet.pdf
+  Configuration Guide: docs/Aport-211S/Aport-211S_Configuration_Guide.pdf
+  Management Utility: docs/Aport-211S/Aport-211S_Management_Utility.pdf
+
+resource: 
+  title: "Resource Link"
+  content: "Download related software"
+  link: "http://www.artila.com/download/Aport/Aport-211/"
+
+features:
+  title: "Features"
+  details:
+    - "Connect RS-232 / 422 / 485 devices to TCP/IP network"
+    - "8 x programmable digital I/Os"
+    - "1 x 10/100Mbps Port"
+    - "Supports TCP / Server mode and TCP / Client mode"
+    - "Web / Telnet / Serial consoles for device configuration"
+    - "Windows utility for device configuration and management"
+    - "Firmware upgradable"
+
+datasheet:
+  - "hw_specifications"
+  - "ordering_information"
+
+hw_specifications:
+  title: "H/W Specifications"
+  sections:
+    "Network Interface":
+      - "Type: 1 x 10/100Mbps Ethernet, RJ45 connector"
+      - "Protocols: TCP, UDP, HTTP, TELNET, IP, ICMP, ARP"
+      - "IP addressing: DHCP, Static IP"
+    "Operation Modes":
+      - "TCP / Server and TCP / Client"
+    "Serial Interface":
+      - "Type: RS-232 / 422 / 485, switch selectable"
+      - "Connector: DB9, male"
+      - "Signals: TxD, RxD, RTS, CTS, DTR, DSR, DCD, GND"
+      - "Baud Rate: 1.2~38.4Kbps"
+      - "Parity: None, Even, Odd"
+      - "Data Bits: 7, 8"
+      - "Stop Bits: 1, 2"
+      - "Flow Control: None, RTS / CTS, XON / OFF"
+    "Programmable Digital I/Os":
+      - "PIO0~PIO5: TTL level compatible"
+      - "PIO6~PIO7: CMOS level compatible"
+      - "Connector: DB9, male"
+    "Configuration Methods":
+      - "Web console, Telnet Console and Serial Console"
+    "General":
+      - "Power Input: +9~+40VDC"
+      - "Power Consumption: 12VDC@70mA"
+      - "Operating Temperature: 0~70°C, 5~95% RH"
+      - "Dimensions (W x H x D): 78 x 108 x 24mm (3.0x4.25x0.94in)"
+      - "Regulation: CE / FCC compliant"
+
+ordering_information:
+  title: "Ordering Information"
+  sections:
+    "Aport-211S":
+      - "Single-port Serial-to-Ethernet Gateway"
+    "DK-35A (36-DK35A-000)":
+      - "DIN RAIL Mounting Kit"
+    "PWR-12V-1A (31-62100-000)":
+      - "110~240VAC to 12VDC 1A Power Adapter"

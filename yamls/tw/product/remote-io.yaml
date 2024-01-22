@@ -1,0 +1,13 @@
+html_title: "Remote I/O"
+page_title: "Remote I/O"
+banner:
+  img_src: "images/family/rio.jpg"
+  heading: "Remote I/O"
+  paragraph: "Easy-to-use DIN-rail mountable Web-ready Modbus/TCP IO modules, supporting analog inputs, isolated digital inputs and relay outputs."
+
+products:
+  RIO-2010:
+    title: "RIO-2010"
+    description: "Modbus / TCP Remote Digital I/O Module"
+    img_src: "images/products/RIO-2010.jpg"
+    link: tw/products/remote-io/rio-2010

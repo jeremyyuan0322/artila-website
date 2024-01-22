@@ -1,0 +1,26 @@
+html_title: "Linux ARM Industrial Box Computer"
+page_title: "Linux ARM Industrial Box Computer"
+banner:
+  img_src: "images/family/aport.jpg"
+  heading: "Industrial Communication Gateway"
+  paragraph: "Easy-to-use serial-to-Ethernet gateways allowing users access RS-232/422/485 devices via LAN or Internet. Virtual COM driver or Fixed-TTY driver is included for free."
+
+
+products:
+  Aport-211S:
+    title: "Aport-211S"
+    features: # 3 features
+      - "Cortex-A7"
+      - "2 Serial Ports"
+      - "2DI and 2DO"
+    img_src: "images/products/Aport-211W.jpg"
+    link: tw/products/linux-arm-industrial-box-computer/aport-211s
+
+  Aport-212:
+    title: "Aport-212"
+    features: # 3 features
+      - "Cortex-A7"
+      - "2 Serial Ports"
+      - "2DI and 2DO"
+    img_src: "images/products/Aport-212.jpg"
+    link: tw/products/linux-arm-industrial-box-computer/aport-212

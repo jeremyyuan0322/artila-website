@@ -1,0 +1,22 @@
+<div class="card">
+	<div class="row g-0">
+		<!-- Image block -->
+		<div class="col-md-4 d-md-flex align-items-center justify-content-center p-3">
+			<div class="view overlay">
+				<img class="img-fluid" src="{{ card.img_src }}" alt="{{ card.title }}">
+			</div>
+		</div>
+		<!-- Text block -->
+		<div class="col-md-8">
+			<div class="card-body">
+				<div class="hover-overlay">
+					<a href="{{ card.link }}">
+						<div class="mask"></div>
+					</a>
+				</div>
+				<h5 class="card-title">{{ card.title }}</h5>
+				<p class="card-text">{{ card.description }}</p>
+			</div>
+		</div>
+	</div>
+</div>

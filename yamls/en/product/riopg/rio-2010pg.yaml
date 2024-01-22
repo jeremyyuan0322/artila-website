@@ -1,0 +1,67 @@
+# RIO-2010PG.yaml
+html_title: "RIO-2010PG"
+page_title: "RIO-2010PG"
+product: "RIO-2010PG"
+family: "FreeRTOS Programmable Remote I/O Module"
+family_page: "riopgList"
+description: FreeRTOS Programmable Remote I/O Module
+image_source: images/products/RIO-2010.jpg
+image_alt: RIO-2010PG
+
+files:
+  Data Sheet: docs/RIO-2010PG/RIO-2010PG_Datasheet.pdf
+  User Guide: docs/RIO-2010PG/RIO-2010PG_User_Guide.pdf
+  Resource Link: "https://www.artila.com/download/RIO/RIO-2010PG/"
+
+features:
+  title: "Features"
+  details:
+    - "NXP LPC1768 ARM Cortex-M3 100MHz CPU"
+    - "512KB on-chip Flash and 64KB SRAM"
+    - "1 x full modem RS-232 and 1 x isolated RS-485 serial port"
+    - "1 x 10/100Mbps Ethernet port"
+    - "1 x serial console port"
+    - "Support lwIP and BSD socket library"
+    - "Support tiny web server"
+    - "Windows configuration utility included"
+    - "Toolchain: Sourcery CodeBench Lite or Keil from ARM"
+
+datasheet:
+  - "hw_specifications"
+  - "sw_specifications"
+  - "ordering_information"
+
+hw_specifications:
+  title: "H/W Specifications"
+  sections:
+    "CPU / Memory":
+      - "CPU: NXP LPC1768 Cortex-M3 100MHz"
+      - "Memory: 512KB on-chip Flash, 64KB SRAM"
+    "Network Interface":
+      - "Type: 1 x 10/100Mbps Ethernet, RJ45 connector"
+    "Serial Ports":
+      - "Port 1: RS-232 full modem"
+      - "Port 2: RS-485 2500Vrms isolated"
+      - "Console: RS-232 three wires"
+    "Serial Port Parameters":
+      - "Baud Rate: 1.2~921.6Kbps"
+    "Isolation Digital Input":
+      - "No. of Channels: 16"
+    "Relay Output":
+      - "No. of Channels: 8"
+    "General":
+      - "Temperature Sensor: Maxim DS18B20 (optional)"
+      - "Power: 9~48VDC power jack and terminal block"
+      - "Dimensions (W x H x D): 182 x 118 x 35.82mm"
+
+ordering_information:
+  title: "Ordering Information"
+  sections:
+    "RIO-2010PG":
+      - "Programmable Remote I/O Module"
+    "CBL-F10M9-20":
+      - "Console Cable (10Pin Header to DB9 Male, 20cm)"
+    "DS18B20":
+      - "Programmable Resolution 1-wire Digital Thermometer"
+    "PWR-12V-1A":
+      - "110~240VAC to 12VDC 1A Power Adapter"

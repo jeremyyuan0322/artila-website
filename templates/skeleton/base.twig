@@ -1,0 +1,202 @@
+{# base.twig #}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="{{ root_dir }}"> {# 網頁根目錄 太離譜啦!!! #}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block link %}
+  {#
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- CDN -->
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet"/>
+  #}
+  <link rel="icon" href="images/artila_logo.png" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <link rel="stylesheet" href="src/scss/mdb.free.css" />
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+  {% endblock %}
+  <title>
+    {% block htmlTitle %}
+    {{html_title}}
+    {% endblock %}
+  </title>
+  <style>
+    {% block style %}
+    /*footer置底*/
+    html{
+      scroll-behavior: smooth;
+      min-height: 100%;
+      position: relative;
+    }
+
+    body{
+      margin-bottom: 100px;
+    }
+
+    #footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+    }
+    /*footer置底*/
+    
+    /*reset margin-bottom of header*/
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 0;
+    }
+    
+    /*breadcrumb*/
+    .breadcrumb a:hover {
+      color: #ffffff;
+    }
+    .breadcrumb-item.active {
+      color: #ffffff;
+      font-weight: bold;
+    }
+    ol li a{
+      text-decoration: none;
+      color: #d6d6d6;
+    }
+    /*breadcrumb*/
+
+    /*scroll to top btn*/
+    #btn-back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+    }
+    /*scroll to top btn*/
+
+    /*carousel滑動動畫*/
+    .carousel-item {
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .card .mask{
+      background-color: hsla(0, 0%, 85%, 0.2);
+    }
+
+    footer i{
+        font-size: 1.3rem;
+      }
+    @media screen and (max-width: 992px) {
+      .language{
+        position: absolute;
+        right: 50px;
+        top: 11px;
+      }
+      .hide-on-mobile {
+        display: none; /* 在小屏幕上隐藏内容 */
+      }
+      .breadcrumb .breadcrumb-item:not(:last-child) {
+        display: none; /* 隐藏除最后一个外的所有面包屑项 */
+      }
+      .carousel img {
+        height: 380px;
+        object-fit: cover;
+        object-position: 5%; /* 將圖片定位至左邊，從而剪裁出左半邊 */
+        width: 100%;
+      }
+    }
+    {% endblock %}
+  </style>
+  
+</head>
+
+<body>
+  <div id="main">
+    {% block navigation %}
+      {% include 'partial/nav.twig' %}
+    {% endblock %}
+
+    {% block breadcrumb %}
+    {% endblock %}
+
+    {% block page_title %}
+    {% endblock %}
+
+    <div id="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div id="footer">
+      {% block footer %}
+        {% include 'partial/footer.twig' %}
+      {% endblock %}
+    </div>
+  </div>
+  {% block script %}
+  <!-- <script src="js/mdb.umd.min.js"></script> -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    //Get the button(捲動到最上面)
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if ( document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    // 監聽<nav>底下所有的<a><button>(.dropdown-toggle除外)，收起手機版navbar
+    document.addEventListener('DOMContentLoaded', function () {
+        const navbar = document.querySelector('nav'); // 选择nav元素
+        const navbarCollapse = document.getElementById('navbarButtonsToggle');
+
+        navbar.querySelectorAll('a:not(.dropdown-toggle), button').forEach(function (element) {
+            element.addEventListener('click', function () {
+                if (navbarCollapse.classList.contains('show')) {
+                    new mdb.Collapse(navbarCollapse).hide();
+                }
+            });
+        });
+    });
+
+
+  </script>
+  
+  {% endblock %}
+  
+</body>
+
+</html>

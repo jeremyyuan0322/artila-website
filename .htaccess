@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /jeremy
+
+# if not a real file
+RewriteCond %{REQUEST_FILENAME} !-f
+# if not a real directory
+RewriteCond %{REQUEST_FILENAME} !-d
+# rewrite to index.php
+RewriteRule ^ index.php [QSA,L]

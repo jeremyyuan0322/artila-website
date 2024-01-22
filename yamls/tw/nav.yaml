@@ -1,0 +1,29 @@
+root_dir: /jeremy/
+lang: tw
+brand_link: tw
+brand_img: images/artila_logo.png
+nav: # products solutions news support about contact
+  - caption: Products
+    link: tw/products
+  - caption: Applications
+    link: tw/applications
+  - caption: News
+    link: tw/news
+  - caption: Support
+    link: "#"
+    dropdown:
+      - caption: Warranty Policy
+        link: tw/warranty
+      - caption: RMA Policy
+        link: tw/rma
+  - caption: About Us
+    link: tw/about
+  - caption: Contact Us
+    link: tw/contact
+langs:
+  - caption: English
+    link: en
+  - caption: 繁體中文
+    link: tw
+  - caption: 简体中文
+    link: cn

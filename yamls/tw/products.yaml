@@ -1,0 +1,69 @@
+# family.yaml
+html_title: "Artila - Family"
+page_title: "Artila - Family"
+title: "Products"
+familyList:
+  - "Linux ARM Industrial Box Computer"
+  - "Linux ARM Single Board Computer"
+  - "Linux ARM System On Module"
+  - "Industrial IoT Controller"
+  # - "FreeRTOS Programmable Remote I/O Module"
+  - "Remote I/O"
+  - "Industrial Communication Gateway"
+  - "Optional Accessory"
+      
+
+Linux ARM Industrial Box Computer:
+  title: Linux ARM Industrial Box Computer
+  description: ARM-based Linux-ready industrial box computers with multiple Ethernet ports, RS-232/422/485 ports, USB ports and digital I/Os. Truly industrial design, fanless, no cable and no moving parts inside.
+  img_src: images/family/matrix2023.jpg
+  link: tw/products/linux-arm-industrial-box-computer
+
+Linux ARM Single Board Computer:
+  title: Linux ARM Single Board Computer
+  description: ARM-based Linux-ready single board computers with Ethernet ports, RS-232/422/485 ports, USB ports and digital inputs/outputs.
+  img_src: images/family/sbc2023.jpg
+  image_alt: Linux ARM Single Board Computer
+  link: tw/products/linux-arm-single-board-computer
+
+Linux ARM System On Module:
+  title: Linux ARM System On Module
+  description: Credit card size, ARM-based Linux-ready System-On-Modules with Ethernet ports, RS-232/422/485 ports, USB ports, SPI, I2S and digital inputs/outputs.
+  img_src: images/family/som2023.jpg
+  image_alt: Linux ARM System On Module
+  link: tw/products/linux-arm-system-on-module
+
+Industrial IoT Controller:
+  title: Industrial IoT Controller
+  description: ARM-based Linux-ready PAC (programmable automation controller) supporting analog inputs, isolated digital inputs and high-drive digital outputs.
+  img_src: images/index_iot_controller.jpg
+  image_alt: Industrial IoT Controller
+  link: tw/products/industrial-iot-controller
+
+# FreeRTOS Programmable Remote I/O Module:
+#   title: FreeRTOS Programmable Remote I/O Module
+#   description: ARM-based Programmable Remote I/O Module with FreeRTOS operating system.
+#   img_src: images/family/rio_pg.jpg
+#   image_alt: FreeRTOS Programmable Remote I/O Module
+#   link: tw/products/riopgList
+
+Remote I/O:
+  title: Remote I/O
+  description: Easy-to-use DIN-rail mountable Web-ready Modbus/TCP IO modules, supporting analog inputs, isolated digital inputs and relay outputs.
+  img_src: images/family/rio.jpg
+  image_alt: Remote I/O
+  link: tw/products/remote-io
+
+Industrial Communication Gateway:
+  title: Industrial Communication Gateway
+  description: ARM-based Linux-ready industrial box computers with multiple Ethernet ports, RS-232/422/485 ports, USB ports and digital I/Os. Truly industrial design, fanless, no cable and no moving parts inside.
+  img_src: images/family/aport.jpg
+  image_alt: Industrial Communication Gateway
+  link: tw/products/industrial-communication-gateway
+
+Optional Accessory:
+  title: Optional Accessory
+  description: Optional Accessory
+  img_src: images/products/91-R45F9-150.jpg
+  image_alt: Optional Accessory
+  link: tw/products/optional-accessory

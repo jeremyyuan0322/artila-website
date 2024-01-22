@@ -1,0 +1,13 @@
+html_title: "Linux ARM System On Module"
+page_title: "Linux ARM System On Module"
+banner:
+  img_src: "images/family/som2023.jpg"
+  heading: "Linux ARM System On Module"
+  paragraph: "Credit card size, ARM-based Linux-ready System-On-Modules with Ethernet ports, RS-232/422/485 ports, USB ports, SPI, I2S and digital inputs/outputs."
+
+products:
+  M-X6ULL-B:
+    title: "M-X6ULL-B"
+    description: "Linux-ready Cortex-A7 System on Module"
+    img_src: "images/products/M-X6ULL-B.jpg"
+    link: cn/products/linux-arm-system-on-module/m-x6ull-b

@@ -1,0 +1,36 @@
+html_title: "Artila Electronics - Warranty Policy"
+page_title: "Warranty Policy"
+
+content:
+  # - type: "header"
+  #   level: 1
+  #   text: "Warranty Policy"
+    
+  - type: "paragraph"
+    text: "Artila warrants all Artila products free from defects in materials and workmanship for <strong>five</strong> years from delivery date onwards."
+
+  - type: "paragraph"
+    text: "Product warranties remain valid provided the product was properly installed and used. Defects, malfunctions, or failures of the warranted product caused by damage resulting from acts of God (such as floods, fire, etc.), environmental and atmospheric disturbances, other external forces such as power line disturbances, host computer malfunction, plugging the board in under power, or incorrect cabling, and damage caused by misuse, abuse, and unauthorized alteration or repair, are not warranted. Artila also disclaims liability for the following situations:"
+
+  - type: "list"
+    items:
+      - "The product has been found to be defective after the warranty period has expired."
+      - "The product is an accessory not carrying the Artila brand name. In this case, warranties are limited to the warranty provided by the original manufacturer of the accessory. Examples of such products and accessories are power adaptors, cables, etc."
+      - "The product has been updated, reworked, or improperly tested by the customer, or by a third party at the request of the customer."
+      - "The product in question is either software, or an expendable item, such as a fuse, battery, etc."
+
+  - type: "paragraph"
+    text: "This warranty is limited to the repair and/or replacement, at Artila's sole discretion, of the defective product during its warranty period. Artila will offer replacement for any DOA (Dead On Arrival) product found to be defective within the first three months of purchase provided said product was properly installed, used, and without any recognized damage."
+
+  - type: "paragraph"
+    text: "The customer agrees to insure the product or assume the risk of loss or damage during transit, to prepay shipping charges, and to use the original shipping container or equivalent. Customers may either seek assistance from the original dealer, or from the closest Artila Service Office. Repaired or replaced products are warranted for ninety (90) days from the date of repair or replacement, or for the remainder of the original product's warranty period, whichever is longer."
+
+  - type: "paragraph"
+    text: "Customers have the option to extend up to three years the warranty of Artila products. Artila products may have a shorter chipset life cycle, or some parts may have a limited warranty from the original supplier of the parts. Please contact Artila's sales department if you would like to extend the warranty of a Artila product."
+
+  - type: "header"
+    level: 2
+    text: "Limitation of Liability"
+
+  - type: "paragraph"
+    text: "The provisions of the warranty are in lieu of any other warranty, whether expressed or implied, written or oral. Artila's liability arising out of the manufacture, sale, or supplying of the product and its use, whether based on warranty, contract, negligence, product liability, or otherwise, shall not exceed the original cost of the product. In no event shall Artila be liable for unintended or consequential damages, including, but not limited to, a loss of profits or use damages arising out of the manufacture, sale, or supplying of the product."

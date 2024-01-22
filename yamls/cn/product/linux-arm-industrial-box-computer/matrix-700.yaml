@@ -1,0 +1,110 @@
+# matrix-700.yaml
+html_title: "Matrix-700"
+page_title: "Matrix-700"
+product: "Matrix-700"
+family: "Linux ARM Industrial Box Computer"
+family_page: "linux-arm-industrial-box-computer"
+description: Linux-ready Cortex-A5 Industrial IoT Gateway
+image_source: images/products/Matrix-700.jpg
+image_alt: Artila Linux Computer Matrix-700
+
+files:
+  Data Sheet: docs/Matrix-700/Matrix-700_Datasheet.pdf
+  Hardware Guide: docs/Matrix-700/Matrix-700_Hardware_Guide.pdf
+  Software Guide: docs/Matrix-700/Matrix-700_Software_Guide.pdf
+  Resource Link: http://www.artila.com/download/imx6ul/linux/
+
+features:
+  title: "Features"
+  details:
+    - "ATMEL ATSAMA5D35 536MHz Cortex-A5 CPU"
+    - "Linux Kernel 5.10.x (or up) with File System"
+    - "Toolchain gcc 9.3.x + glibc 2.31"
+    - "512MB LPDDR2 SDRAM"
+    - "16GB eMMC Flash and 8MB DataFlash for System Backup"
+    - "1 x USB 2.0, 1 x MicroSD Card Slot (Inside)"
+    - "1 x Gigabit Ethernet and 1 x 10/100Mbps Ethernet"
+    - "4 x RS-232 / 485 Serial Ports"
+    - "Ultra-low power consumption, less than 3 Watts"
+
+datasheet:
+  - "hw_specifications"
+  - "sw_specifications"
+  - "ordering_information"
+
+hw_specifications:
+  title: "H/W Specifications"
+  sections:
+    "CPU Memory":
+      - "CPU: ATMEL ATSAMA5D35 536MHz w/MMU"
+      - "SDRAM: 512MB, LPDDR2"
+      - "Flash: 16GB, eMMC"
+      - "DataFlash: 8MB, for system backup"
+    "Network Interface":
+      - "Type: 1 x Gigabit and 1 x 10/100Mbps Ethernet"
+      - "Connector Type: RJ45"
+    "TTY (Serial) Ports":
+      - "RS-232 or RS-485, software select"
+      - "RS-232 Signals: TX, RX, RTC, CTS"
+      - "RS-485 Signals: Data+, Data-"
+      - "RS-485 Automatic Flow Control: Yes"
+    "TTY (Serial) Port Parameters":
+      - "Baud Rate: up to 921.6Kbps"
+      - "Parity: None, Even, Odd, Mark, Space"
+      - "Data Bits: 5, 6, 7, 8"
+      - "Stop Bits: 1, 1.5, 2"
+      - "Flow Control: RTS / CTS, XON / XOFF, None"
+    "Console / Debug Ports":
+      - "Support microUSB console port"
+      - "Serial console port (inside the box)"
+    "USB 2.0 Host Interface":
+      - "Supports 480Mbps hi-speed mode"
+      - "Host Ports: 2"
+    "SD Slot":
+      - "1 x Micro-SD socket"
+      - "SD 2.0 Compliant, support SDHC"
+      - "Storage capacity: support up to 128G"
+    "General":
+      - "Watchdog: Yes"
+      - "Real-Time Clock (RTC): YES"
+      - "Buzzer: Yes"
+      - "Supports microUSB power source"
+      - "Power Input: +9V~+48Vdc (terminal block)"
+      - "Typical Consumption: 12VDC@200mA"
+      - "Dimensions (W x H x D): 78 x 108 x 24mm (3.0x4.25x0.94in)"
+      - "Operating Temperature: 0~70°C (32~158°F)"
+      - "Regulation: CE Class A, FCC Class A"
+
+sw_specifications:
+  title: "S/W Specifications"
+  sections:
+    "Operation System":
+      - "Linux kernel 5.10.x or up"
+      - "Supports bootup from eMMC or SD card"
+      - "Supports backup from SD card or USB device"
+      - "Boot Loader : BareBox"
+      - "File System : EXT4/ETX3/ETX2, VFAT/FAT, NFS"
+    "Software Development":
+      - "Toolchain: gcc 9.3.0 + glibc 2.31"
+      - "Supports in-place C/C++ code compilation"
+    "Package Management":
+      - "Package repository: Artila self-maintained repository"
+      - "Command: Using standard apt-get command"
+    "Popular Packages":
+      - "Web server: Apache/Nginx/Lighttpd"
+      - "Database: MySQL/SQLite3/PostgreSQL"
+      - "Script Language: PHP/Python/Perl/NodeJS"
+      - "Text editor: vim/nano/sed"
+      - "Administration: Webmin"
+
+ordering_information:
+  title: "Ordering Information"
+  sections:
+    "Matrix-700":
+      - "Linux-ready Cortex-A5 536MHz Industrial IoT Gateway with 512MB SDRAM, 16GB eMMC Flash"
+    "CB-PHDF9-050 (91-PHDF9-050)":
+      - "Console Cable (Wafer Box 4P to DB9 Female, 50cm)"
+    "DK-35A (36-DK35A-000)":
+      - "DIN RAIL Mounting Kit"
+    "PWR-12V-1A":
+      - "110~240VAC to 12VDC 1A Power Adapter"

@@ -1,0 +1,131 @@
+{# partial template for skeleton/family.twig #}
+{# BS5沒有showcase功能 要自己刻 #}
+{# feature #}
+<div class="container">
+	<div class="card mb-3 shadow-0">
+		<div class="row g-0 mb-3">
+			<!-- 左边图片区块 -->
+			<div class="col-md-5 d-flex align-items-center justify-content-center">
+				<img src="{{ image_source }}" alt="{{ image_alt }}" class="img-fluid">
+			</div>
+			<!-- 右边特性列表区块 -->
+			<div class="col-md-7">
+				<div class="card-body">
+					<h3 class="card-title">{{ features.title }}</h3>
+					<ul class="card-text">
+						{% for feature in features.details %}
+							<li>{{ feature }}</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% set hasOverview = overview is defined %}
+	<!-- 下半部分標籤頁 -->
+	<ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+		{% if hasOverview %}
+		<li class="nav-item" role="presentation">
+			<a 
+				data-mdb-tab-init
+				class="nav-link active" 
+				id="overview-tab" 
+				href="#overview" 
+				role="tab" 
+				aria-controls="overview" 
+				aria-selected="true">Overview</a
+			>
+		</li>
+		{% endif %}
+		<li class="nav-item" role="presentation">
+			<a 
+				data-mdb-tab-init
+				class="nav-link {{ hasOverview ? '' : 'active' }}" 
+				id="specifications-tab"
+				href="#specifications" 
+				role="tab" 
+				aria-controls="specifications" 
+				aria-selected="false">Specifications</a
+			>
+		</li>
+		<li class="nav-item" role="presentation">
+			<a
+				data-mdb-tab-init
+				class="nav-link" 
+				id="resources-tab"
+				href="#resources" 
+				role="tab" 
+				aria-controls="resources" 
+				aria-selected="false">Resources</a
+			>
+		</li>
+	</ul>
+
+	<div class="tab-content">
+		<!-- 概述标签页 -->
+		{% if hasOverview %}
+		<div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="specifications-tab">
+			<h3>{{ introduction.title }}</h3>
+			<p>{{ introduction.content }}</p>
+		</div>
+		{% endif %}
+		
+
+		<!-- 规格标签页 -->
+		<div class="tab-pane fade {{ hasOverview ? '' : 'show active' }}" id="specifications" role="tabpanel" aria-labelledby="specifications-tab">
+			{% set outerLoopIndex = 0 %}
+			{% for part in datasheet %}
+				{% set section = attribute(_context, part) %}
+				<div class="d-flex justify-content-between align-items-center">
+					<h3 class="my-3">{{ section.title }}</h3>
+					<button class="btn-toggle-accordion text-black" data-accordion-id="datasheetAccordion{{ outerLoopIndex }}">
+						<img src="icon/arrows-collapse.svg" alt="collapse" class="collapseIcon"/>
+						Collapse all
+					</button>
+				</div>
+				<div class="accordion" id="datasheetAccordion{{ outerLoopIndex }}">
+					{% set innerLoopIndex = 0 %}
+					{% for category, items in section.sections %}
+						{% set collapseId = 'collapse' ~ outerLoopIndex ~ '_' ~ innerLoopIndex %}
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="heading{{ collapseId }}">
+								<button data-mdb-collapse-init class="accordion-button" type="button" data-mdb-toggle="collapse" data-mdb-target="#{{ collapseId }}">
+									<strong>{{ category }}</strong>
+								</button>
+							</h2>
+							<div id="{{ collapseId }}" class="accordion-collapse collapse show" aria-labelledby="heading{{ collapseId }}">
+								<div class="accordion-body">
+									<ul>
+										{% for item in items %}
+											<li>{{ item }}</li>
+										{% endfor %}
+									</ul>
+								</div>
+							</div>
+						</div>
+						{% set innerLoopIndex = innerLoopIndex + 1 %}
+					{% endfor %}
+				</div>
+				{% set outerLoopIndex = outerLoopIndex + 1 %}
+			{% endfor %}
+		</div>
+
+
+		<!-- 資源頁籤 -->
+		<div class="tab-pane fade" id="resources" role="tabpanel" aria-labelledby="resources-tab">
+			<table class="table">
+				<tbody>
+					{% for name, path in files %}
+						<tr>
+							<td>{{ name }}</td>
+							<td>
+								<a target="_blank" href="{{ path }}"><i class="fas fa-download"></i></a>
+							</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

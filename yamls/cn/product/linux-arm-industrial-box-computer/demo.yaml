@@ -1,0 +1,72 @@
+# demo.yaml
+html_title: "Matrix-752"
+page_title: "Matrix-752"
+product: "Matrix-752"
+family: "Linux ARM Industrial Box Computer"
+family_page: "linux-arm-industrial-box-computer"
+description: Linux-ready Cortex-A7 Highly Integrated Industrial IoT Gateway
+image_source: images/products/Matrix-752.jpg
+image_alt: Artila Linux Computer Matrix-752
+
+files:
+  Data Sheet: docs/Matrix-752/Matrix-752_Datasheet.pdf
+  Hardware Guide: docs/Matrix-752/Matrix-752_Hardware_Guide.pdf
+  Software Guide: docs/Matrix-752/Matrix-752_Software_Guide.pdf
+  Resource Link: http://www.artila.com/download/imx6ul/linux/
+
+features:
+  title: "Features"
+  details:
+    - "NXP i.MX6ULL Cortex-A7 CPU, Up to 800MHz"
+    - "Support Ubuntu and Embedded Linux Kernel 5.10.x (or up)"
+    - "Toolchain: gcc 9.3.0 + glibc 2.31"
+
+# optional
+overview:
+  - "introduction"
+
+# optional
+introduction: 
+  title: "Introduction"
+  content: "there is no introduction for this product"
+
+# it depends on the datasheet actually has how many sections
+datasheet: 
+  - "hw_specifications"
+  - "sw_specifications"
+  - "ordering_information"
+
+hw_specifications:
+  title: "H/W Specifications"
+  sections:
+    "CPU Memory":
+      - "CPU: NXP i.MX6ULL Cortex-A7 MPCore, Up to 800MHz"
+      - "SDRAM: 512MB, LvDDR3"
+      - "Flash: 16GB, eMMC"
+    "Network Interface":
+      - "Type: 2 x 10/100Mbps Ethernet"
+      - "Connector Type: RJ45 (with LED indicator)"
+    "USB Interface":
+      - "1 x USB OTG Port"
+      - "microUSB connector"
+
+sw_specifications:
+  title: "S/W Specifications"
+  sections:
+    "Operation System":
+      - "Support Ubuntu and Embedded Linux, kernel 5.10.x (or up)"
+      - "Supports bootup from eMMC or SD card"
+      - "Supports backup from SD card or USB device"
+      - "Boot Loader: BareBox"
+      - "File System: EXT4"
+    "Software Development":
+      - "Toolchain: gcc 9.3.0 + glibc 2.31"
+      - "Supports in-place C/C++ code compilation"
+
+ordering_information:
+  title: "Ordering Information"
+  sections:
+    "Matrix-752 / Matrix-752U":
+      - "Linux / Ubuntu-ready Cortex-A7, 800MHz Industrial IoT Gateway with 512MB SDRAM, 16G eMMC"
+    "CB-PHDF9-050 (91-PHDF9-050)":
+      - "Console Cable (Wafer Box 4P to DB9 Female, 50cm)"

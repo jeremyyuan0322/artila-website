@@ -1,0 +1,33 @@
+html_title: "Solutions"
+page_title: "Solutions"
+
+solutions:
+  - title: "Commercial Refrigerated Cabinets"
+    link: "en/applications/story1"
+    description: "Description for Commercial Refrigerated Cabinets"
+    image: "images/solution/supermarket_app.png"
+
+  - title: "Vending Machine"
+    link: "en/applications/story2"
+    description: "Description for Vending Machine"
+    image: "images/solution/supermarket_app.png"
+
+  - title: "Charging Station"
+    link: "en/applications/story3"
+    description: "Description for Charging Station"
+    image: "images/solution/supermarket_app.png"
+
+  - title: "Meter Reading"
+    link: "en/applications/story4"
+    description: "Description for Meter Reading"
+    image: "images/solution/supermarket_app.png"
+
+  - title: "Self Gas Station"
+    link: "en/applications/story5"
+    description: "Description for Self Gas Station"
+    image: "images/solution/supermarket_app.png"
+
+  - title: "Solar Power Plants"
+    link: "en/applications/story6"
+    description: "Description for Solar Power Plants"
+    image: "images/solution/supermarket_app.png"

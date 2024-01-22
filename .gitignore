@@ -1,0 +1,38 @@
+# Ignore editor backup files and macOS system metadata
+.DS_Store
+.*.swp
+.*.swo
+*~
+
+# ignore docs
+**/docs
+
+# ignore images
+**/images
+
+# ignore news
+**/news
+
+# cache dir
+**/cache
+
+# ignore vendor
+**/vendor
+
+# ignore libs
+**/libs
+
+# Ignore all .txt files
+*.txt
+
+# php files
+index copy.php
+index1.php
+test.php
+
+# html files
+test copy.html
+test.html
+
+# css files
+test.css

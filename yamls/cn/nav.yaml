@@ -1,0 +1,29 @@
+root_dir: /jeremy/
+lang: cn
+brand_link: cn
+brand_img: images/artila_logo.png
+nav: # products solutions news support about contact
+  - caption: Products
+    link: cn/products
+  - caption: Applications
+    link: cn/applications
+  - caption: News
+    link: cn/news
+  - caption: Support
+    link: "#"
+    dropdown:
+      - caption: Warranty Policy
+        link: cn/warranty
+      - caption: RMA Policy
+        link: cn/rma
+  - caption: About Us
+    link: cn/about
+  - caption: Contact Us
+    link: cn/contact
+langs:
+  - caption: English
+    link: en
+  - caption: 繁體中文
+    link: tw
+  - caption: 简体中文
+    link: cn

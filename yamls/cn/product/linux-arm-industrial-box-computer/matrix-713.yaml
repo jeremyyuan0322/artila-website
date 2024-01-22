@@ -1,0 +1,119 @@
+# Matrix-713.yaml
+html_title: "Matrix-713"
+page_title: "Matrix-713"
+product: "Matrix-713"
+family: "Linux ARM Industrial Box Computer"
+family_page: "linux-arm-industrial-box-computer"
+description: "ARM-based Linux-ready Intelligent communication IoT Gateway"
+image_source: "images/products/Matrix-713.jpg"
+image_alt: "Matrix-713 Industrial IoT Gateway"
+
+files:
+  Data Sheet: "docs/Matrix-713/Matrix-713_Datasheet.pdf"
+  Hardware Guide: "docs/Matrix-713/Matrix-713_Hardware_Guide.pdf"
+  Software Guide: "docs/Matrix-713/Matrix-713_Software_Guide.pdf"
+  Resource Link: http://www.artila.com/download/imx6ul/linux/
+
+features:
+  title: "Features"
+  details:
+    - "Rugged Design, Wide-range Temperature operating"
+    - "ATMEL ATSAMA5D35 536MHz Cortex-A5 CPU"
+    - "Linux kernel 5.10.x or up with file system"
+    - "Support Node-Red, the browser-based flow editor"
+    - "512MB LPDDR2 SDRAM"
+    - "16GB eMMC Flash and 8MB DataFlash for system backup"
+    - "Toolchain: gcc 9.3.0 + glibc 2.31"
+    - "2 x USB, 1 x Micro-SD socket, 1 x Line-out"
+    - "1 x Gigabit Ethernet and 1 x 10/100Mbps Ethernet"
+    - "Rich I/Os: 4x isolated RS-485, 2x CAN, 2x USB, 2x DI, 2x DO"
+    - "2x miniPCIe slot & 2x micro-SIM card socket reserved"
+
+datasheet:
+  - "hw_specifications"
+  - "sw_specifications"
+  - "ordering_information"
+
+hw_specifications:
+  title: "H/W Specifications"
+  sections:
+    "CPU / Memory":
+      - "CPU: ATMEL ATSAMA5D35 536MHz w/MMU"
+      - "SDRAM: 512MB, LPDDR2"
+      - "Flash: 16GB, eMMC"
+      - "DataFlash: 8MB, for system backup"
+    "Network Interface":
+      - "Type: 1 x Gigabit and 1 x 10/100Mbps Ethernet"
+      - "Protection: 1.5KV magnetic isolation"
+      - "Connector Type: RJ45"
+    "TTY (Serial) Ports":
+      - "4 x Isolated RS-485 (1500Vrms isolation)"
+      - "Port 4 support RS422 / RS-485 (selectable)"
+      - "Direction Control: Auto, by hardware"
+      - "Connector: Terminal block"
+      - "RS485 Signal: Data+, Data-"
+    "CAN Bus Ports":
+      - "2 x CAN bus 2.0 A/B compliant ports"
+      - "Speed: Up to 1Mbps"
+    "Console / Debug Ports":
+      - "1 x microUSB console port"
+      - "Serial console port (inside the box)"
+    "USB 2.0 Host Interface":
+      - "2 x USB Host Port"
+    "Audio Out":
+      - "1 x Line-out R/L port, optional Earphone R/L"
+      - "Connector: Earphone-Jack"
+      - "Support MP3 and WAV format"
+    "Digital Input":
+      - "2 x Digital Input channels"
+      - "Isolation Protection: 5000Vrms (Photo-Coupler)"
+      - "Logical High: 5~24VDC"
+      - "Logical Low: 0~1.5VDC"
+    "Relay Output":
+      - "2 x Digital Output Channels (Solid state Relay)"
+      - "Solid State Relay, Normal Open (NO) Type"
+      - "Contact Rating: 80VDC@1.5A"
+    "SD Slot":
+      - "1 x Micro-SD socket"
+      - "SD 2.0 compliant, supports SDHC"
+    "Expansion":
+      - "2 x miniPCIe Full-size socket"
+      - "2 x micro-SIM card socket, USB interface reserved"
+      - "4 x SMA-type Antenna hole reserved"
+    "General":
+      - "Watchdog: Yes"
+      - "Real-Time Clock (RTC): Yes, backup by super capacitor"
+      - "Buzzer: Yes"
+      - "Power Input: +9~+60VDC (terminal block)"
+      - "Typical Consumption: 12VDC@600mA"
+      - "Indicator: PWR, READY, LAN, UART, CAN, Status(user define)"
+      - "Dimensions (W x L x H): 160 x 118 x 35mm (6.3 x 4.64 x 1.37in)"
+      - "Operating Temperature: 0~70°C (32~158°F)"
+      - "Regulation: CE Class A, FCC Class A"
+      - "Installation: Wall mounting, DIN-rail mounting (with optional kit)"
+
+sw_specifications:
+  title: "S/W Specifications"
+  sections:
+    "Operation System":
+      - "Linux kernel 5.10.x or up"
+      - "Supports bootup from eMMC or SD card"
+      - "Supports backup from SD card or USB device"
+      - "Boot Loader: Barebox"
+      - "File System: EXT4/ETX3/ETX2, VFAT/FAT, NFS"
+    "Software Development":
+      - "Toolchain: gcc 9.3.x+ glibc 2.31"
+      - "Supports in-place C/C++ code compilation"
+
+ordering_information:
+  title: "Ordering Information"
+  sections:
+    "Matrix-713":
+      - "Linux-ready Cortex-A5 536MHz Industrial IoT Gateway with 512MB SDRAM, 16GB eMMC Flash, with LAN/USB/DI/DO/CAN/Audio out/GPIO/mPCIe slot"
+    "Optional 4G/LTE miniPCIe Module with antenna":
+      - "Matrix-713-C (for China) / Matrix-713-EA (for Europe, Asia, LATAM)"
+      - "Matrix-713-NA (for North America)"
+    "DK-35A (36-DK35A-000)":
+      - "DIN RAIL Mounting Kit"
+    "PWR-12V-1A":
+      - "12VDC@1A power adapter with 100 ~ 240VAC power-in"

@@ -1,0 +1,38 @@
+{# news.twig #}
+
+{% extends "skeleton/base.twig" %}
+
+{% block content %}
+  <div class="container my-5">
+    <h2>{{ title }}</h2>
+    <h3 class="text-secondary">{{ subtitle }}</h3>
+
+    {% for item in content %}
+    <div class="mt-4">
+      {% if item.type == 'paragraph' %}
+        <p>{{ item.text | raw }}</p>
+      {% elseif item.type == 'image' %}
+        <div class="text-center">
+          <img src="{{ item.src }}" alt="{{ item.alt }}" class="img-fluid">
+        </div>
+      {% elseif item.type == 'list' %}
+        <ul>
+          {% for li in item.items %}
+            <li>{{ li }}</li>
+          {% endfor %}
+        </ul>
+      {% elseif item.type == 'strong' %}
+        <strong>{{ item.text }}</strong>
+      {% elseif item.type == 'video' %}
+        <div class="ratio ratio-16x9">
+          <iframe
+            src="{{ item.src }}" 
+            title="YouTube video"
+            allowfullscreen>
+          </iframe>
+        </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+{% endblock %}

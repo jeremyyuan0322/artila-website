@@ -1,0 +1,40 @@
+<div id="carouselIndicators" class="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
+	<!-- Indicators/dots -->
+	<div class="carousel-indicators">
+		{% for slide in carousel %}
+			<button 
+				type="button" 
+				data-mdb-target="#carouselIndicators" 
+				data-mdb-slide-to="{{ loop.index0 }}" 
+				{{loop.first ? 'class="active"' : ''}}
+				aria-current="true" 
+				aria-label="Slide {{ loop.index }}"></button>
+		{% endfor %}
+	</div>
+
+	<!-- The slideshow/carousel -->
+	<div class="carousel-inner">
+		{% for slide in carousel %}
+			<div class="carousel-item {{loop.first ? 'active' : ''}}">
+				<a href="{{ slide.link }}" target="_blank">
+					<!-- 使用連結包裹圖片 -->
+					<img 
+						src="{{ slide.src }}" 
+						alt="{{ slide.alt }}"
+						class="d-block w-100"
+					>
+				</a>
+			</div>
+		{% endfor %}
+	</div>
+
+	<!-- Left and right controls/icons -->
+	<button class="carousel-control-prev" type="button" data-mdb-target="#carouselIndicators" data-mdb-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-mdb-target="#carouselIndicators" data-mdb-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+	</button>
+</div>

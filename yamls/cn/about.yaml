@@ -1,0 +1,84 @@
+html_title: "Artila Electronics - About"
+page_title: "Company Profile"
+
+content:
+  # - type: "header"
+  #   level: 1
+  #   text: "Company Profile"
+
+  - type: "header"
+    level: 2
+    text: "Vision"
+
+  - type: "header"
+    level: 3
+    text: "Era of Pervasive / Ubiquitous Computing"
+
+  - type: "paragraph"
+    text: "The pervasive computing revolution will definitely occur. We envision a future in which computation becomes part of the environment, that is, computation and information will be available everywhere, anytime."
+
+  - type: "header"
+    level: 3
+    text: "Smart Devices That Think and Interconnected"
+
+  - type: "paragraph"
+    text: "Not only in computers, computation will be embodied in devices. Pervasive computing devices are smart devices, either mobile or embedded in almost any type of object imaginable, including cars, tools, appliances, clothing and various consumer goods - all communicating through increasingly interconnected networks."
+
+  - type: "header"
+    level: 2
+    text: "Mission"
+
+  - type: "paragraph"
+    text: "Artila's mission is to empower device manufactures and system integrators to realize pervasive computing by providing quality products and OEM/ODM service to help our customers to incorporate Ethernet connectivity, Web service and embedded computing into their products and solutions."
+
+  - type: "header"
+    level: 2
+    text: "Products"
+
+  - type: "list"
+    items:
+      - "<a href='en/products/linux-arm-industrial-box-computer</a>"
+      - "<a href='en/products/linux-arm-single-board-computer'>Linux Single Board Computers</a>"
+      - "<a href='en/products/linux-arm-system-on-module'>Linux System On Modules</a>"
+      - "<a href='en/products/industrial-iot-controller'>Programmable Industrial IoT Controller</a>"
+      - "<a href='en/products/remote-io'>Remote I/O</a>"
+      - "<a href='en/products/industrial-communication-gateway'>Industrial Communication Gateway</a>"
+
+  - type: "header"
+    level: 2
+    text: "OEM / ODM Service"
+
+  - type: "paragraph"
+    text: "Apart from our standard products, Artila is highly willing to accept OEM / ODM request to design and manufacture custom-specified hardware and software. Our service includes:"
+
+  - type: "list"
+    items:
+      - "Private labeling"
+      - "Software customization"
+      - "Hardware customization"
+      - "Chip or firmware license"
+
+  - type: "header"
+    level: 2
+    text: "Our People"
+
+  - type: "paragraph"
+    text: "Our team is made up of individuals who are intelligent, energetic and creative and who always strive to put the customer first. We have over 20 years of combined experience in the areas of industrial PCs and industrial communications. Our goal is to contribute our expertise to provide reliable and cost effective solutions to customers we serve, while at the same time providing our people with a work environment that is challenging and rewarding."
+
+  - type: "header"
+    level: 2
+    text: "Our Promise"
+
+  - type: "header"
+    level: 3
+    text: "To Our Customers"
+
+  - type: "paragraph"
+    text: "We will always treat our customers honestly and with respect. We will strive to provide the most reliable and cost effective solution for the customers' application we will stand behind our products until the customer is satisfied."
+
+  - type: "header"
+    level: 3
+    text: "To Our Partners"
+
+  - type: "paragraph"
+    text: "We will treat our partners like they are part of our company as they are important to our overall success. We will always tell them the truth as we know that they will make commitments to their customers based on the information we give them. We will hold in confidence any information they share with us."

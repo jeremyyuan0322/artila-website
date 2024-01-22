@@ -1,0 +1,29 @@
+{# family.twig #}
+
+{% extends "skeleton/base.twig" %}
+
+{% block style %}
+	{{ parent() }}
+	.card{
+		margin: 1rem;
+		padding: 0.5rem;
+	}
+
+	.view img{
+		max-height: 140px;
+	}
+	.col-4{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	@media (max-width: 768px) {
+		.view img{
+			max-height: 120px;
+		}
+	}
+{% endblock %}
+
+{% block content %}
+	{% include 'partial/productList.twig' %}
+{% endblock %}

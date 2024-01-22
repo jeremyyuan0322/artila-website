@@ -1,0 +1,25 @@
+{# solutionList.twig #}
+
+{% extends "skeleton/base.twig" %}
+
+{% block style %}
+	{{ parent() }}
+  .card-body h5 {
+    font-size: 1.5rem; 
+  }
+{% endblock %}
+
+{% block content %}
+  <div class="container my-5">
+    <div class="bg-secondary text-white mb-4 p-2">
+      <h1>{{ page_title }}</h1>
+    </div>
+    <div class="row">
+      {% for card in solutions %}
+      <div class="col-md-4 mb-4">
+        {% include 'partial/card_vertical.twig' %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

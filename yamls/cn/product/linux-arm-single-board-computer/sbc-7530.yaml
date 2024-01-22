@@ -1,0 +1,128 @@
+# sbc7530.yaml
+html_title: "SBC-7530"
+page_title: "SBC-7530"
+product: "SBC-7530"
+family: "Linux ARM Single Board Computer"
+family_page: "linux-arm-single-board-computer"
+description: ARM-based Linux-ready single board computers with Ethernet ports, RS-232/422/485 ports, USB ports and digital inputs/outputs.
+image_source: images/products/SBC-7530.jpg
+image_alt: SBC-7530
+
+files:
+  Data Sheet: docs/SBC-7530/SBC-7530_Datasheet.pdf
+  Software Guide: docs/SBC-7530/SBC-7530_Software_Guide.pdf
+  Resource Link: http://www.artila.com/download/imx6ul/linux/
+
+features:
+  title: "Features"
+  details:
+    - "NXP i.MX6ULL Cortex-A7 CPU, Up to 800MHz"
+    - "Linux kernel 5.4.x with boot loader & file system"
+    - "Toolchain: gcc 9.3.x + glibc 2.31"
+    - "512MB DDR3/LvDDR3 SDRAM & 16GB eMMC"
+    - "Dual 10/100Mbps Ethernet Ports"
+    - "Multiple interfaces including CAN, OTG USB, HOST USB, Digital Input, Relay out, RS-485, RS-232"
+    - "24bits LVDS display interface with touch sensor interface"
+    - "X11 Desktop environment"
+    - "Expansion options including miniPCIe slot, Micro-SIM socket, Micro-SD socket"
+    - "Onboard Temperature Sensor"
+    - "WLAN 2.4G Single band WiFi support 802.11b/g/n"
+    - "Compact Size: 150mm x 115mm"
+    - "+9~48VDC Power Input"
+
+datasheet:
+  - "hw_specifications"
+  - "sw_specifications"
+  - "ordering_information"
+
+hw_specifications:
+  title: "H/W Specifications"
+  sections:
+    "CPU Memory":
+      - "CPU: NXP i.MX6ULL Cortex-A7 MPCore, Up to 800MHz"
+      - "SDRAM: 512MB, DDR3/LvDDR3"
+      - "Flash: 16GB, eMMC"
+    "Network Interface":
+      - "Type: 2 x 10/100Mbps Ethernet"
+      - "Connector Type: RJ45"
+      - "Protection: 1.5KV magnetic isolation"
+    "TTY (Serial) Ports":
+      - "2 x Isolated RS-485 (1500Vrms isolation)"
+      - "1 x RS-232 (TX/RX/GND)"
+      - "Connector: Terminal block"
+    "CAN Bus Ports":
+      - "1 x CAN bus 2.0 A/B compliant port, Speed: Up to 1Mbps"
+      - "Connector: Terminal block"
+    "Console / Debug Ports":
+      - "1 x Serial console port (internal)"
+    "USB Interface":
+      - "1 x USB OTG Port (microUSB connector)"
+      - "2 x USB Host Port (USB Type-A connector)"
+    "Audio Out":
+      - "1 x Line-out R/L port, optional Earphone R/L"
+      - "Connector: Earphone-Jack"
+    "Digital Input":
+      - "2 x Digital Input channels"
+      - "Isolation Protection: 2500Vrms (Photo-Coupler)"
+    "Relay Output":
+      - "1 x Relay out channel"
+    "Display Interface":
+      - "One LVDS 24bits digital Display interface"
+      - "Support max. 85 MHz display clock and up to WXGA (1366 x 768) at 60 Hz"
+    "Touch Sensor Interface":
+      - "Support 4-wire resistive touch panel (USB interface)"
+    "Expansion":
+      - "1 x miniPCIe Full-size socket"
+      - "1 x micro-SIM card socket reserve"
+    "Temperature Sensor":
+      - "1 x Temperature Sensor on board (I2C)"
+    "WLAN Interface":
+      - "1 x WiFi Interface, Frequency Band: 2.4G Single band"
+    "SD Slot":
+      - "1 x microSD socket, SD 2.0 compliant, supports SDHC"
+    "General":
+      - "Power Input: +9~48VDC"
+      - "Watch-Dog Timer: YES"
+      - "Real-Time Clock (RTC): YES"
+      - "Dimensions (W x L): 150mm x 115mm (5.9in x 4.5in)"
+      - "Mounting Hole x4 reserved, 3.0mm (M3) in diameter"
+      - "Consumption: 2.16Watts (NO expansion module / LCD)"
+      - "1 x Reset Switch"
+      - "LED Indicators: Power LED, Ready LED, Status LED (User define) x2"
+
+sw_specifications:
+  title: "S/W Specifications"
+  sections:
+    "Operation System":
+      - "Linux kernel 5.4.x"
+      - "Support bootup from eMMC or SD card"
+      - "Supports backup from SD card or USB device"
+      - "Boot Loader: BareBox"
+      - "File System: EXT4/EXT3/EXT2, VFAT/FAT, NFS"
+    "Desktop Environment":
+      - "Matchbox (X11 Desktop Environment)"
+      - "Built-in Firefox / Chromium browser + virtual keyboard"
+    "Software Development":
+      - "Toolchain: gcc 9.3.0 + glibc 2.31"
+      - "Supports in-place C/C++ code compilation"
+    "Package Management":
+      - "Package repository: Artila self-maintained repository"
+      - "Command: Using standard apt-get command"
+    "Popular Packages":
+      - "Web server: Apache/Nginx/Lighttpd"
+      - "Database: MySQL/SQLite3/PostgreSQL"
+      - "Script Language: PHP/Python/Perl/NodeJS"
+      - "Text editor: vim/nano/sed"
+      - "Administration: Webmin"
+
+ordering_information:
+  title: "Ordering Information"
+  sections:
+    "SBC-7530":
+      - "Linux-ready Cortex-A7 800MHz Single Board Computer, with 512MB SDRAM&16G eMMC, LAN/USB/UART/I2C/CAN, Digital I/O, Relay out, mPCIe slot, Display Interface, Audio"
+    "CB-RJ45F9-150 (91-R45F9-150)":
+      - "Serial Cable (RJ45 to DB9 Female, 150cm)"
+    "PWR-12V-1A (31-62100-000)":
+      - "110~240VAC to 12VDC 1A Power Adapter"
+    "Starter Kit - SBC-7530":
+      - "SBC-7530 single board computer with 7\" Touch LCD module"

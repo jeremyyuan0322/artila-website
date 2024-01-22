@@ -1,0 +1,41 @@
+# Matrix-702.yaml
+html_title: "Matrix-702"
+page_title: "Matrix-702"
+product: "Matrix-702"
+family: "Linux ARM Industrial IoT Gateway"
+family_page: "linux-arm-industrial-box-computer"
+description: Linux-ready Cortex-A5 LAN-to-WLAN Industrial IoT Gateway
+image_source: images/products/Matrix-702.jpg
+image_alt: Matrix-702 Linux Industrial IoT Gateway
+
+files:
+  Data Sheet: docs/Matrix-702/Matrix-702_Datasheet.pdf
+  Hardware Guide: docs/Matrix-702/Matrix-702_Hardware_Guide.pdf
+  Software Guide: docs/Matrix-702/Matrix-702_Software_Guide.pdf
+  Resource Link: http://www.artila.com/download/imx6ul/linux/
+
+features:
+  title: "Features"
+  details:
+    - "ATMEL Cortex-A5 ATSAMA5D35 536MHz CPU, 512MB LPDDR2 SDRAM, 16GB eMMC"
+    - "Linux kernel 5.4.x with boot loader & file system, Toolchain: gcc 9.3.0 + glibc 2.31"
+    - "1 x Gigabit Ethernet and 1 x 10/100Mbps Ethernet"
+    - "1 x full size miniPCIe socket inside,1 x Micro-SIM slot inside"
+    - "2 x Antenna through SMA connector holes reserved"
+    - "1 x microSD socket, support up to 128G storage capacity"
+    - "1 x Serial console port (inside the box)"
+    - "Input Voltage: +9V~+48Vdc (terminal block)"
+    - "Real-time clock(RTC): Yes"
+    - "Watchdog: Yes"
+    - "Dimensions (W x H x D): 89 x 109.6 x 30mm (3.5 x 4.3 x 1.18in)"
+    - "Operating Temperature: 0~70°C (32~158°F)"
+    - "Regulation: CE Class A, FCC Class A"
+
+datasheet:
+  - "ordering_information"
+
+ordering_information:
+  title: "Ordering Information"
+  sections:
+    "Matrix-702":
+      - "Linux-ready Cortex-A5 536MHz Industrial IoT Gateway with 512MB SDRAM, 16GB eMMC Flash"

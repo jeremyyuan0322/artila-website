@@ -1,0 +1,75 @@
+{# solution.twig #}
+
+{% extends "/skeleton/base.twig" %}
+
+{% block style %}
+	{{ parent() }}
+	.card img {
+		max-height: 200px;
+		width: auto;
+		object-fit: cover;
+	}
+	.card .view {
+		height: 200px;
+		width: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.card .card-title, .card .card-text{
+		text-align: center;
+	}
+{% endblock %}
+{% block content %}
+<div class="container my-5">
+	<h2>{{ title }}</h2>
+	<h3 class="text-secondary">{{ subtitle }}</h3>
+
+	{% for item in content %}
+		<div class="mt-4">
+			{% if item.type == 'header' %}
+				<h3>{{ item.text }}</h3>
+				{% if item.style is defined %}
+					<hr class="{{ item.style }}">
+				{% endif %}
+
+			{% elseif item.type == 'main_image' %}
+				<img src="{{ item.src }}" alt="{{ item.alt }}" class="img-fluid float-start me-3">
+
+			{% elseif item.type == 'paragraph' %}
+				<p>{{ item.text | raw }}</p>
+				{% if item.section_end is defined %}
+					<hr class="border-bottom border-2">
+				{% endif %}
+
+			{% elseif item.type == 'image' %}
+				<div class="text-center">
+					<img src="{{ item.src }}" alt="{{ item.alt }}" class="img-fluid">
+				</div>
+				{% if item.section_end is defined %}
+					<hr class="border-bottom border-2">
+				{% endif %}
+
+			{% elseif item.type == 'list' %}
+				<ul>
+					{% for li in item.items %}
+						<li>{{ li }}</li>
+					{% endfor %}
+				</ul>
+
+			{% elseif item.type == 'product' %}
+				<div class="row">
+				{% for card in item.products %}
+					<div class="col-md mb-4">
+						{% include 'partial/card_vertical.twig' %}
+					</div>
+				{% endfor %}
+				</div>
+				{% if item.section_end is defined %}
+					<hr class="border-bottom border-2">
+				{% endif %}
+			{% endif %}
+		</div>
+	{% endfor %}
+</div>
+{% endblock %}

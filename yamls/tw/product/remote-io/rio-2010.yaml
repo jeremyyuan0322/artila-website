@@ -1,0 +1,81 @@
+# RIO-2010.yaml
+html_title: "RIO-2010"
+page_title: "RIO-2010"
+product: "RIO-2010"
+family: "Remote I/O"
+family_page: "remote-io"
+description: Modbus/TCP Remote Digital I/O Module
+image_source: images/products/RIO-2010.jpg
+image_alt: RIO-2010
+
+files:
+  Data Sheet: docs/RIO-2010/RIO-2010_Datasheet.pdf
+  User Guide: docs/RIO-2010/RIO-2010_User_Guide.pdf
+  Resource Link: "https://www.artila.com/download/RIO/RIO-2010/"
+
+features:
+  title: "Features"
+  details:
+    - "Web Based Remote I/O Monitoring and Control"
+    - "Supports Modbus, AJAX, MQTT"
+    - "Stand-Alone Alarm Relay Control and Email Alert"
+    - "8 x Relay Out Form A or Form B Relay"
+    - "16 x Isolated Digital Input and 3 x Maxim 1-Wire Temperature Measurement"
+    - "1 x 10/100Mbps Ethernet Port"
+
+datasheet:
+  - "hw_specifications"
+  - "access_control_guidelines"
+  - "ordering_information"
+
+hw_specifications:
+  title: "H/W Specifications"
+  sections:
+    "CPU / Memory":
+      - "CPU: NXP Arm Cortex-M3 LPC1768 100MHz"
+      - "Memory: 512KB on-chip Flash, 64KB SRAM"
+    "Network Interface":
+      - "Type: 1 x 10/100Mbps, RJ45 connector"
+    "RS-485 Interface":
+      - "Isolation Protection: 2500Vrms"
+    "Digital Input":
+      - "No. of Channels: 16"
+    "Relay Output":
+      - "No. of Channels: 8"
+    "Maxim 1-Wire Interface":
+      - "No. of Channels: 3"
+    "General":
+      - "Temperature Sensor: Maxim DS18B20 (optional)"
+      - "Power Input: +9 ~ +48VDC"
+      - "Dimensions (W x H x D): 182 x 118 x 36mm"
+
+access_control_guidelines:
+  title: "Access Control Guidelines"
+  sections:
+    "Default Access Ports":
+      - "Modbus/TCP Port: 502"
+      - "Telnet Console Port: 5001"
+      - "HTTP Port: 5003"
+    "Access Through Modbus Protocols":
+      - "Modbus/TCP via LAN interface"
+      - "Modbus/ASCII, Modbus/RTU via RS-485 interface"
+    "Access Through HTTP GET/POST Protocols":
+      - "AJAX-enabled demo page for web-based monitoring and controls"
+    "Operation Mode":
+      - "Modbus TCP/RTU slave"
+      - "Web direct I/O control"
+      - "MQTT auto data and event publish and log"
+      - "Stand-alone alarm relay control and email alert"
+      - "C/C++ programmable controller (RIO-2010PG)"
+
+ordering_information:
+  title: "Ordering Information"
+  sections:
+    "RIO-2010":
+      - "Modbus/TCP Remote Digital I/O Module"
+    "CB-F10M9-20":
+      - "Console Cable (10Pin Header to DB9 Male, 20cm)"
+    "DS18B20":
+      - "Programmable Resolution 1-wire Digital Thermometer"
+    "PWR-12V-1A":
+      - "110~240VAC to 12VDC 1A Power Adapter"

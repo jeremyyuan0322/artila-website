@@ -1,0 +1,75 @@
+# aport212.yaml
+page_title: "Aport-212"
+product: "Aport-212"
+family: "Industrial Communication Gateway"
+family_page: "industrial-communication-gateway"
+description: "Dual-port Modbus Gateway"
+image_source: "images/products/Aport-212.jpg"
+image_alt: "Aport-212"
+
+files:
+  Data Sheet: docs/Aport-212/Aport-212_Datasheet.pdf
+  Hardware Guide: docs/Aport-212/Aport-212_Hardware_Guide.pdf
+  Software Guide: docs/Aport-212/Aport-212_Software_Guide.pdf
+
+resource: 
+  title: "Resource Link"
+  content: "Download related software"
+  link: "http://www.artila.com/download/Aport/Aport-211/"
+
+features:
+  title: "Features"
+  details:
+    - "Gateway of Modbus / TCP to Modbus RTU / ASCII"
+    - "2 x configurable serial ports"
+    - "Supports up to 16 x Modbus / TCP masters or 32 x Modbus / TCP slaves"
+    - "Supports transparent serial to Ethernet conversion"
+    - "1 x 10/100Mbps Ethernet port"
+    - "Supports telnet, web and serial console configuration"
+    - "Support command line interface configuration"
+    - "Windows configuration utility included"
+    - "Firmware upgradable by Ethernet / Internet"
+
+datasheet:
+  - "hw_specifications"
+  - "ordering_information"
+
+hw_specifications:
+  title: "H/W Specifications"
+  sections:
+    "CPU / Memory":
+      - "CPU: NXP Arm Cortex-M3 LPC1768 100MHz"
+      - "Memory: 512KB on-chip Flash, 64KB SRAM"
+    "Network Interface":
+      - "Type: 1 x 10/100Mbps Ethernet, RJ45 connector"
+      - "Protection: 1500Vrms magnetic isolation"
+    "Serial Ports":
+      - "Port 1: RS-232 / 422 / 485"
+      - "Port 2: RS-232"
+    "Serial Port Parameters":
+      - "Baud Rate: 1.2~921.6Kbps"
+      - "Data Bits: 5, 6, 7, 8"
+      - "Stop Bits: 1, 2"
+      - "Flow Control: None / Hardware / XON_XOFF"
+      - "Protection: 1500Vrms ESD"
+    "Serial Console Port":
+      - "RS-232: 115.2Kbps baud rate, no flow control, 8 bits data, 1 stop bit"
+    "Operation Mode":
+      - "Modbus Gateway: Slave RTU, Slave ASCII, Master RTU, Master ASCII"
+      - "S2E Gateway: TCP server, TCP client"
+    "General":
+      - "Power Input: +9~+40VDC power jack and terminal block"
+      - "Dimensions (W x H x D): 78 x 108 x 24mm (3.0x4.25x0.94in)"
+      - "Operating Temperature: 0~60ºC"
+
+ordering_information:
+  title: "Ordering Information"
+  sections:
+    "Aport-212":
+      - "Modbus Gateway with 2 x Serial Ports, and 1 x Ethernet Port"
+    "CB-RJ2CON-100 (91-RJCON-100)":
+      - "Console Cable (RJ45 to DB9 Female, 100cm)"
+    "DK-35A (36-DK35A-000)":
+      - "DIN RAIL Mounting Kit"
+    "PWR-12V-1A (31-62100-000)":
+      - "110~240VAC to 12VDC 1A Power Adapter"

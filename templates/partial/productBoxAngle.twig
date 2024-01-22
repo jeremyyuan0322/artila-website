@@ -1,0 +1,158 @@
+{# partial template for skeleton/family.twig #}
+{# BS5沒有showcase功能 要自己刻 #}
+{# feature #}
+<div class="container">
+	<div class="row m-3">
+		<!-- 左边图片，占据5列宽度 -->
+		<div class="col-md-5 d-flex justify-content-center">
+			<div class="ecommerce-gallery" data-mdb-zoom-effect="true" data-mdb-auto-height="true">
+				<div class="row py-3 shadow-5">
+					<div class="col-12 mb-1">
+						<div class="lightbox">
+							<imgc 
+								src="images/products/Matrix-752.jpg"
+								alt="Gallery image 1"
+								class="ecommerce-gallery-main-img active w-100"
+							/>
+						</div>
+					</div>
+					{% for img in angle_images %}
+					<div class="col-3 mt-1">
+						<img
+							src="{{ img.src }}"
+							data-mdb-img="{{ img.src }}"
+							alt="{{ img.alt }}"
+							class="active w-100"
+						/>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		<!-- 右边特性列表，占据7列宽度 -->
+		<div class="col-md-7">
+			<h3>{{ features.title }}</h3>
+			<ul>
+				{% for feature in features.details %}
+					<li>{{ feature }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+
+	{% set hasOverview = overview is defined %}
+	<!-- 下半部分標籤頁 -->
+	<ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+		{% if hasOverview %}
+		<li class="nav-item" role="presentation">
+			<a 
+				data-mdb-tab-init
+				class="nav-link active" 
+				id="overview-tab" 
+				href="#overview" 
+				role="tab" 
+				aria-controls="overview" 
+				aria-selected="true">Overview</a
+			>
+		</li>
+		{% endif %}
+		<li class="nav-item" role="presentation">
+			<a 
+				data-mdb-tab-init
+				class="nav-link {{ hasOverview ? '' : 'active' }}" 
+				id="specifications-tab"
+				href="#specifications" 
+				role="tab" 
+				aria-controls="specifications" 
+				aria-selected="false">Specifications</a
+			>
+		</li>
+		<li class="nav-item" role="presentation">
+			<a
+				data-mdb-tab-init
+				class="nav-link" 
+				id="resources-tab"
+				href="#resources" 
+				role="tab" 
+				aria-controls="resources" 
+				aria-selected="false">Resources</a
+			>
+		</li>
+	</ul>
+
+	<div class="tab-content">
+		<!-- 概述标签页 -->
+		{% if hasOverview %}
+		<div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="specifications-tab">
+			<h3>{{ introduction.title }}</h3>
+			<p>{{ introduction.content }}</p>
+		</div>
+		{% endif %}
+		
+
+		<!-- 规格标签页 -->
+		<div class="tab-pane fade {{ hasOverview ? '' : 'show active' }}" id="specifications" role="tabpanel" aria-labelledby="specifications-tab">
+			{% set outerLoopIndex = 0 %}
+			{% for part in datasheet %}
+				{% set section = attribute(_context, part) %}
+				<div class="d-flex justify-content-between align-items-center">
+					<h3 class="my-3">{{ section.title }}</h3>
+					<button class="btn-toggle-accordion" data-accordion-id="datasheetAccordion{{ outerLoopIndex }}">
+						<img src="icon/arrows-collapse.svg" alt="collapse" class="collapseIcon"/>
+						Collapse all
+					</button>
+				</div>
+				<div class="accordion" id="datasheetAccordion{{ outerLoopIndex }}">
+					{% set innerLoopIndex = 0 %}
+					{% for category, items in section.sections %}
+						{% set collapseId = 'collapse' ~ outerLoopIndex ~ '_' ~ innerLoopIndex %}
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="heading{{ collapseId }}">
+								<button data-mdb-collapse-init class="accordion-button" type="button" data-mdb-toggle="collapse" data-mdb-target="#{{ collapseId }}">
+									<strong>{{ category }}</strong>
+								</button>
+							</h2>
+							<div id="{{ collapseId }}" class="accordion-collapse collapse show" aria-labelledby="heading{{ collapseId }}">
+								<div class="accordion-body">
+									<ul>
+										{% for item in items %}
+											<li>{{ item }}</li>
+										{% endfor %}
+									</ul>
+								</div>
+							</div>
+						</div>
+						{% set innerLoopIndex = innerLoopIndex + 1 %}
+					{% endfor %}
+				</div>
+				{% set outerLoopIndex = outerLoopIndex + 1 %}
+			{% endfor %}
+		</div>
+
+
+		<!-- 資源頁籤 -->
+		<div class="tab-pane fade" id="resources" role="tabpanel" aria-labelledby="resources-tab">
+			<table class="table">
+				<caption>
+						<a class="text-decoration-none text-secondary" target="_blank" href="{{ resource.link }}">Resource Link</a>
+				</caption>
+				<thead>
+					<tr>
+						<th scope="col">File</th>
+						<th scope="col">Link</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for name, path in files %}
+						<tr>
+							<td>{{ name }}</td>
+							<td>
+								<a target="_blank" href="{{ path }}">Download</a>
+							</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
