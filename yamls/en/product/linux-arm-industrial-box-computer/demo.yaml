@@ -3,15 +3,15 @@ page_title: "Matrix-752"
 product: "Matrix-752"
 family: "Linux ARM Industrial Box Computer"
 family_page: "linux-arm-industrial-box-computer"
-description: Linux-ready Cortex-A7 Highly Integrated Industrial IoT Gateway
-image_source: images/products/Matrix-752.jpg
-image_alt: Artila Linux Computer Matrix-752
+description: "Linux-ready Cortex-A7 Highly Integrated Industrial IoT Gateway"
+image_source: "images/products/Matrix-752.jpg"
+image_alt: "Artila Linux Computer Matrix-752"
 
 files:
-  Data Sheet: docs/Matrix-752/Matrix-752_Datasheet.pdf
-  Hardware Guide: docs/Matrix-752/Matrix-752_Hardware_Guide.pdf
-  Software Guide: docs/Matrix-752/Matrix-752_Software_Guide.pdf
-  Resource Link: http://www.artila.com/download/imx6ul/linux/
+  Data Sheet: "docs/Matrix-752/Matrix-752_Datasheet.pdf"
+  Hardware Guide: "docs/Matrix-752/Matrix-752_Hardware_Guide.pdf"
+  Software Guide: "docs/Matrix-752/Matrix-752_Software_Guide.pdf"
+  Resource Link: "http://www.artila.com/download/imx6ul/linux/"
 
 features:
   title: "Features"
