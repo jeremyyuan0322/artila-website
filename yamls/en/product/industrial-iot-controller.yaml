@@ -11,3 +11,8 @@ products:
     description: "NXP i.MX6ULL Cortex-A7 CPU, Linux-based Industrial Automation Controller"
     img_src: "images/products/PAC-6070.jpg"
     link: en/products/industrial-iot-controller/pac-6070
+  PAC-4070:
+    title: "PAC-4070"
+    description: "NXP i.MX6ULL Cortex-A7 CPU, Linux-based Industrial Automation Controller"
+    img_src: "images/products/PAC-4070.jpg"
+    link: en/products/industrial-iot-controller/pac-4070

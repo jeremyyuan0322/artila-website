@@ -11,7 +11,7 @@ $productDirs = [
         'matrix-512.yaml', 'matrix-516.yaml', 'matrix-518.yaml', 'matrix-522.yaml'
     ],
     'product/linux-arm-system-on-module' => [
-        'm-x6ull.yaml', 'm-m5d35.yaml', 'm-502.yaml', 'm-501.yaml', 'm-501-starter-kit.yaml'
+        'm-x6ull.yaml', 'm-a5d35.yaml', 'm-502.yaml', 'm-501.yaml', 'm-501-starter-kit.yaml'
     ],
     'product/remote-io' => [
         'rio-2017.yaml', 'rio-2018.yaml'

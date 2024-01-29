@@ -98,7 +98,7 @@
 								<div class="accordion-body">
 									<ul>
 										{% for item in items %}
-											<li>{{ item }}</li>
+											<li>{{ item|raw }}</li>
 										{% endfor %}
 									</ul>
 								</div>

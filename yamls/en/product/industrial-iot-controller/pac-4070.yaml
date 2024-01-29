@@ -1,0 +1,156 @@
+# PAC-4070.yaml
+html_title: "PAC-4070"
+page_title: "PAC-4070"
+product: "PAC-4070"
+family: "Linux-based Arm9 Programmable Automation Controller"
+family_page: "linux-based-arm9-programmable-automation-controller"
+description: "Linux-based Arm9 Programmable Automation Controller"
+image_source: images/products/PAC-4070.jpg
+image_alt: PAC-4070
+
+files:
+  Data Sheet: null
+  Hardware Guide: null
+  Software Guide: null
+  Resource Link: "www.artila.com"
+
+features:
+  title: "Features"
+  details:
+    - "ATMEL AT91SAM9G20 400MHz CPU w/ MMU"
+    - "Linux kernel 2.6.29 with file system"
+    - "64MB SDRAM and 256MB NAND Flash"
+    - "GNU C / C++ toolchain is included"
+    - "4 x 16-bit multiplexed differential analog inputs"
+    - "4 x 2500Vrms 500mA High-Drive digital outputs"
+    - "4 x 5000Vrms Opto-isolated bipolar digital inputs"
+    - "2 x 10/100Mbps Ethernet ports"
+    - "Up to 4 x RS-232 ports, 921.6Kbps max."
+    - "2 x 1500Vrms isolated RS-485 ports, with auto direction control"
+
+datasheet:
+  - "hw_specifications"
+  - "sw_specifications"
+  - "ordering_information"
+
+hw_specifications:
+  title: "H/W Specifications"
+  sections:
+    "CPU / Memory":
+      - "CPU: ATMEL AT91SAM9G20 400MHz w/ MMU"
+      - "Memory: 64MB SDRAM, 256MB NAND Flash"
+      - "DataFlash®: 2MB, for system backup"
+    "Network Interface":
+      - "No. of Ports: 2"
+      - "Type: 10/100Mbps Ethernet, RJ45 connector"
+      - "Protection: 1.5KV magnetic isolation"
+    "TTY (Serial) Ports":
+      - "Port 1: Can be set as RS-232 or RS-485, software selectable<br>
+         RS-232: TX, RX, RTS, CTS, GND<br>
+         RS-485: D+, D- (must wiring to terminal block)"
+      - "Port 2: Can be set as RS-232 or RS-485, software selectable<br>
+         RS-232: TX, RX, RTS, CTS, DSR, DTR, DCD, GND<br>
+         RS-485: D+, D- (must wiring to terminal block)"
+      - "Port 3, 4: RS-232 only<br>
+         RS-232: TX, RX, RTS, CTS, GND"
+    "Common UART Parameters":
+      - "Baud Rate: Up to 921.6Kbps"
+      - "Parity: None, Even, Odd, Mark, Space"
+      - "Data Bits: 5, 6, 7, 8"
+      - "Stop Bits: 1, 1.5, 2"
+      - "Flow Control: RTS / CTS, XON / XOFF, None"
+    "USB Ports":
+      - "Host Ports: 2, USB 2.0 compliant"
+      - "Client Port: 1, USB 2.0 compliant"
+      - "Speed: Supports 12Mbps full-speed mode"
+    "SD Socket (Secure Digital Card)":
+      - "1 x Micro-SD socket (at bottom side)"
+      - "SD 2.0 Compliant, support SDHC"
+    "Real Time Clock":
+      - "Chip: ST M41T81"
+      - "Backup Battery: Lithium, 48mAh, on-board"
+    "Watchdog Timer":
+      - "CPU built-in watchdog timer, used by Linux kernel"
+    "Debug Port":
+      - "Type: RS-232 serial console, inside the box"
+      - "Signals: Tx, Rx, GND"
+    "High-precision Analog Input":
+      - "A/D Converter: AD7712 (Analog Devices)"
+      - "No. of Channels: 4, multiplexed, differential"
+      - "Sampling Speed: 10 readings per second"
+      - "Input Range (selected by software):<br>
+         0~150mV, 0~500mV, +/-150mV, +/-500mV<br>
+         0~1V, 0~5V, 0~10V, +/-1V, +/-5V, +/-10V<br>
+         0~20mA"
+      - "Resolution: 16-bit"
+      - "Accuracy: +/-0.1%"
+      - "Voltage Input Mode: Differential, 100db CMR"
+      - "Voltage Input Impedance: 20M Ohms"
+      - "Current Input Impedance: 120 Ohms"
+      - "Isolation Protection: 1500VDC"
+    "Isolated Digital Input":
+      - "No. of Channels: 4, supporting bipolar input"
+      - "Opto-isolation: 5000Vrms"
+      - "Logical High: 5~24VDC"
+      - "Logical Low: 0~1.5VDC"
+      - "Response Time: 20μs"
+    "High-Drive Digital Output":
+      - "No. of Channels: 4"
+      - "Source Driver: UDN2981A (Allegro MicroSystems)"
+      - "Source Voltage (VDD): 5~50VDC"
+      - "Output Current: 500mA max."
+      - "Isolation: 2500Vrms"
+    "General":
+      - "Power Input Range: +9V~+48VDC"
+      - "Power Consumption: 12VDC@500mA, 6 Watts max."
+      - "Operating Temperature: 0~70°C (32~158°F)"
+      - "EMC Regulation: CE Class A, FCC Class A"
+      - "Dimensions (W x H x D): 65 x 130 x 102.5mm (2.56x5.12x4.03in)"
+      - "Mounting: DIN RAIL mountable"
+
+sw_specifications:
+  title: "S/W Specifications"
+  sections:
+    "General":
+      - "OS: Linux, kernel 2.6.14"
+      - "Boot Loader: U-Boot"
+      - "File Systems: JFFS2, ETX2 / ETX3, VFAT / FAT, NFS"
+    "Protocol Stacks":
+      - "IPv4, ICMP, ARP, DHCP, NTP, TCP, UDP, FTP, TELNET, HTTP, PPP, PPPoE, CHAP, PAP, SMTP, SNMP V1 / V2, SSL, SSH 1.0 / 2.0"
+    "Pre-Installed Utilities":
+      - "Bash: shell command"
+      - "Tinylogin: login and user manager utility"
+      - "Telnet: telnet client program"
+      - "Busybox: Linux utility collection"
+      - "FTP: ftp client program"
+    "Daemons":
+      - "Pppd: dial in / out over serial port and PPPoE"
+      - "Snmpd: SNMP agent program"
+      - "Telnetd: telnet server program"
+      - "Inetd: TCP server program"
+      - "Ftpd: ftp server program"
+      - "Boa: web server program"
+      - "Sshd: secured shell server"
+      - "Iptables: firewall service manager"
+      - "Amgrd: Artila manager daemon"
+    "Toolchain for Linux":
+      - "GCC: C / C++ PC cross compiler for Linux, Cygwin"
+      - "GLIBC: POSIX Library"
+    "Device Drivers":
+      - "SD / MMC, UART, Real Time Clock, Buzzer, Digital I/O, Ethernet, Watchdog Timer"
+    "USB Host Drivers (Could Be Customized)":
+      - "Flash disk"
+      - "WiFi (IEEE-802.11)"
+      - "RS-232 adapters"
+
+ordering_information:
+  title: "Ordering Information"
+  sections:
+    "PAC-4070":
+      - "Linux-based Arm9 Programmable Automation Controller"
+    "CB-RJ45F9-150 (91-R45F9-150)":
+      - "Serial Cable (RJ45 to DB9 Female, 150cm)"
+    "CB-PHDF9-050 (91-PHDF9-050)":
+      - "Console Cable (Wafer Box to DB9 Female, 50cm)"
+    "PWR-12V-1A":
+      - "100~240VAC to 12VDC 1A Power Adapter"

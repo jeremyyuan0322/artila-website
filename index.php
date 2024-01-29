@@ -30,7 +30,7 @@ class Page
 		$langDir = "{$baseDir}/{$lang}";
 		if (file_exists("{$langDir}/{$pageName}.yaml")) {
 			$yamlFile = "{$langDir}/{$pageName}.yaml";
-			echo "yaml: ".$yamlFile . "<br>";
+			// echo "yaml: ".$yamlFile . "<br>";
 			return $yamlFile;
 		}
 		else{
@@ -39,7 +39,7 @@ class Page
 			foreach ($subDirs as $subDir) {
 				$yamlFile = "{$langDir}/{$subDir}/{$pageName}.yaml";
 				if (file_exists($yamlFile)) {
-					echo "yaml: ".$yamlFile . "<br>";
+					// echo "yaml: ".$yamlFile . "<br>";
 					return $yamlFile;
 				}
 			}
@@ -49,13 +49,13 @@ class Page
 			foreach ($productSubDirs as $subDir) {
 				$yamlFile = "{$subDir}/{$pageName}.yaml";
 				if (file_exists($yamlFile)) {
-					echo "yaml: ".$yamlFile . "<br>";
+					// echo "yaml: ".$yamlFile . "<br>";
 					return $yamlFile;
 				}
 			}
 
 		}
-		echo "yaml: ".$yamlFile . "<br>";
+		// echo "yaml: ".$yamlFile . "<br>";
 		error_404();
 
 	}
@@ -85,9 +85,9 @@ class Page
 function error_404()
 {
 	// 404 Not Found
-	echo "404 Not Found<br>";
-	// header("HTTP/1.0 404 Not Found");
-	// exit;
+	// echo "404 Not Found<br>";
+	header("HTTP/1.0 404 Not Found");
+	exit;
 }
 
 // Extract the specific parts
@@ -97,7 +97,7 @@ $reqSubDir = null;   // 'linux-arm-industrial-box-computer'
 $reqPage = null;     // 'matrix-752'
 // Assuming the URI is something like "/jeremy/en/products/matrix-752"
 $uri = $_SERVER['REQUEST_URI'];
-echo "URI: ".$uri. "<br>";
+// echo "URI: ".$uri. "<br>";
 
 // Trim the leading slash to avoid an empty element in the array
 $trimmedUri = ltrim($uri, '/');
@@ -110,9 +110,9 @@ array_shift($parts);
 
 // Count the number of paths
 $pathCount = count($parts);
-echo "pathCount: ".$pathCount. "<br>";
+// echo "pathCount: ".$pathCount. "<br>";
 if ($pathCount == 1) {
-	echo "parts[0]: ".$parts[0]. "<br>";
+	// echo "parts[0]: ".$parts[0]. "<br>";
 	if ($parts[0] == 'en' || $parts[0] == 'tw' || $parts[0] == 'cn') {
 		$reqLang = $parts[0];
 		$reqPage = 'index';
@@ -144,11 +144,11 @@ else {
 }
 
 // Display the results
-echo "Number of paths: $pathCount\n". "<br>";
-echo "Language: $reqLang\n". "<br>";
-echo "Base Directory: $reqBaseDir\n". "<br>";
-echo "Sub Directory: $reqSubDir\n". "<br>";
-echo "Page: $reqPage\n". "<br>";
+// echo "Number of paths: $pathCount\n". "<br>";
+// echo "Language: $reqLang\n". "<br>";
+// echo "Base Directory: $reqBaseDir\n". "<br>";
+// echo "Sub Directory: $reqSubDir\n". "<br>";
+// echo "Page: $reqPage\n". "<br>";
 
 // 初始化 Twig 模板引擎
 $loader = new FilesystemLoader(['templates', 'templates/news', 'templates/application', 'templates/product']);
@@ -177,5 +177,5 @@ $context = array_merge($page->nav, $page->content, $page->footer);
 $templateFile = Page::getTemplateFilePath($reqPage);
 $template = $twig->load($templateFile);
 $result = $template->render($context);
-echo "base dir: ".__DIR__. "<br>";
+// echo "base dir: ".__DIR__. "<br>";
 echo $result;
