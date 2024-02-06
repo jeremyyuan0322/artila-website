@@ -1,21 +1,19 @@
-# part1
+# M-X6ULL-B.yaml
 html_title: "M-X6ULL-B"
 page_title: "M-X6ULL-B"
 product: "M-X6ULL-B"
 family: "Linux ARM System on Module"
 family_page: "linux-arm-system-on-module"
-description: "Linux-ready Cortex-A7 System on Module"
-image_source: "images/products/M-X6ULL-B.jpg"
-image_alt: "Linux ARM System on Module M-X6ULL-B"
+description: Linux-ready Cortex-A7 System on Module
+image_source: images/products/M-X6ULL-B.jpg
+image_alt: M-X6ULL-B
 
-# part2
 files:
-  Data Sheet: "docs/M-X6ULL-B/M-X6ULL-B_Datasheet.pdf"
-  Hardware Guide: "docs/M-X6ULL-B/M-X6ULL-B_Hardware_Guide.pdf"
-  Software Guide: "docs/M-X6ULL-B/M-X6ULL-B_Software_Guide.pdf"
-  Resource Link: "http://www.artila.com/download/imx6ul/linux/"
-
-# part3
+  Data Sheet: docs/M-X6ULL-B/M-X6ULL-B_Datasheet.pdf
+  Hardware Guide: docs/M-X6ULL-B/M-X6ULL-B_Hardware_Guide.pdf
+  Software Guide: docs/M-X6ULL-B/M-X6ULL-B_Software_Guide.pdf
+  Resource Link: http://www.artila.com/download/imx6ul/linux/
+  
 features:
   title: "Features"
   details:
@@ -24,18 +22,17 @@ features:
     - "Toolchain: gcc 9.3.x + glibc 2.31"
     - "512MB DDR3/LvDDR3 SDRAM, 16GB eMMC"
     - "1x 10/100MHz Ethernet Interface"
-    - "4x UART, 2x USB & I2C / I2S / SPI / GPIO/RMII Interface"
+    - "Multiple interfaces: 4x UART, 2x USB, I2C/I2S/SPI/GPIO/RMII"
     - "SD Interface, Serial Console"
-    - "24bits RGB Display Interface, 4 -Wired Resistive Touch Interface"
-    - "Compact Size, 50 x 80mm"
+    - "24bits RGB Display Interface, 4-Wired Resistive Touch Interface"
+    - "Compact Size: 50 x 80mm"
     - "Single 3.3VDC Power-In"
 
-# part4
-datasheet: 
+datasheet:
   - "hw_specifications"
   - "sw_specifications"
   - "ordering_information"
-
+  
 hw_specifications:
   title: "H/W Specifications"
   sections:
@@ -44,65 +41,44 @@ hw_specifications:
       - "SDRAM: 512MB, DDR3/LvDDR3"
       - "eMMC: 16GB"
     "Micro-SD 2.0 Interface":
-      - "Signals: cmd, clock, data0~3, card_detect"
       - "SDHC Compatible"
     "Network Interface":
       - "Type: 1 x 10/100Mbps Ethernet with PHY"
-      - "Signal: EXT+, EXT-, ERX+, ERX"
       - "Protection: 1.5KV Magnetic isolation"
     "UART Interface":
       - "UART1~4: TX, RX, RTS, CTS, GND"
-      - "Signal Level: 3.3V"
       - "Common UART Parameters"
-      - "Baud Rate: up to 921.6Kbps"
-      - "Parity: None, Even, Odd, Mark, Space"
-      - "Data Bits: 5, 6, 7, 8"
-      - "Stop Bits: 1, 1.5, 2"
-      - "Flow Control: RTS / CTS, XON / XOFF, None"
     "USB 2.0 Interface":
-      - "Supports 480Mbps high-speed mode"
       - "1x Host USB 2.0 Port, 1x USB Client Port"
-    "I2S / I2C / SPI Interface":
-      - "I2S Transmit Signals: TX, Sync, CLK"
-      - "I2S Receive Signals: RX"
-      - "I2C Signals: data(SDA), clock (SCL)"
-      - "SPI Data Signal: MISO, MOSI, SCLK"
-      - "SPI Chip Select: CS1"
+    "I2S/I2C/SPI Interfaces":
+      - "I2S: Transmit and Receive Signals"
+      - "I2C: data(SDA), clock (SCL)"
+      - "SPI: MISO, MOSI, SCLK, CS1"
     "GPIO & RMII Interface":
       - "Total No. of Pins: 15"
     "Console / Debug Ports":
       - "Serial console port (TX / RX / GND)"
     "Display Interface":
       - "One 24bits RGB digital parallel display interface"
-      - "Support max 85 MHz display clock, Up to WXGA (1366x768) at 60Hz"
     "Touch Sensor Interface":
-      - "Support 4-wire resistive touch pane"
-    "SD Interface":
-      - "Signal: cmd, clock, data0~3, card detect"
-      - "SDHC compatible"
+      - "Support 4-wire resistive touch panel"
     "General":
-      - "Power Input: +3.3VDC, Consumption: 0.75Watts (Typical)"
-      - "Watch-Dog Timer: YES"
-      - "Real-Time Clock (RTC): YES"
+      - "Power Input: +3.3VDC"
       - "Dimensions (W x L): 50 x 80mm"
-      - "Mounting Hole x 2 reserved , 2.0mm (M2) in diameter"
-      - "Pins: Total 128pins, 2.0mm pitch, CN1(28pin)/CN2(50pin)/ CN3(50pin)"
+      - "Pins: Total 128pins, 2.0mm pitch"
 
 sw_specifications:
   title: "S/W Specifications"
   sections:
     "Operation System":
       - "Linux kernel 5.10.x (or up)"
-      - "Support bootup from eMMC or SD card"
       - "Boot Loader: Barebox"
       - "File System: EXT4/EXT3/EXT2, VFAT/FAT, NFS"
-      - "GUI Engine: X11"
     "Desktop Environment":
       - "Matchbox (X11 Desktop Environment)"
-      - "Built-in Firefox / Chromium browser + virtual keyboard"
+      - "Built-in Firefox / Chromium browser"
     "Software Development":
       - "Toolchain: gcc 9.3.0 + glibc 2.31"
-      - "Supports in-place C/C++ code compilation"
     "Package Management":
       - "Package repository: Artila self-maintained repository"
       - "Command: Using standard apt-get command"
@@ -111,4 +87,4 @@ ordering_information:
   title: "Ordering Information"
   sections:
     "M-X6ULL-B":
-      - "Linux-ready Cortex-A7 800MHz System on Module with 512MB SDRAM 16G eMMC, (PIN-Header type)"
+      - "Linux-ready Cortex-A7, 800MHz System on Module with 512MB SDRAM, 16G eMMC, (PIN-Header type)"
