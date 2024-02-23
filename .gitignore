@@ -13,6 +13,9 @@
 # ignore news
 **/news
 
+# do not ignore yamls/en/news
+!yamls/en/news/
+
 # cache dir
 **/cache
 

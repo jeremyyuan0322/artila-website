@@ -1,0 +1,43 @@
+html_title: "PAC-6070: Cortex-A7 Linux Computing Platform for Advanced Industrial IoT Applications"
+page_title: "PAC-6070: Cortex-A7 Linux Computing Platform for Advanced Industrial IoT Applications"
+
+title: "PAC-6070: Cortex-A7 Linux Computing Platform for Advanced Industrial IoT Applications"
+subtitle: "Elevating Your Industrial IoT Cortex-A7 Controller with A/D, DI and Relay-Out"
+content:
+  - type: "image"
+    src: "news/images/PAC-6070product launch.png"
+    alt: "PAC-6070"
+
+  - type: "paragraph"
+    text: "Taipei, Taiwan, June 1 --- The <a href='en/products/industrial-iot-controller/pac-6070' target='_blank'>PAC-6070</a> is a cost-effective Linux computing platform powered by Cortex-A7 MPU. It offers a versatile range of on-board IOs, including voltage/current measurement, opto-isolated digital inputs, and high-power relay outputs. With its comprehensive IO capabilities, the PAC-6070 enables efficient monitoring and control, making it the perfect choice for advanced Industrial IoT applications."
+
+  - type: "image"
+    src: "news/images/PAC-6070_1.png"
+    alt: "PAC-6070"
+
+  - type: "paragraph"
+    text: "<a href='en/products/industrial-iot-controller/pac-6070' target='_blank'>PAC-6070</a> is powered by NXP i.MX6ULL cortex-A7 processor, coupled with 1GB SDRAM and 16GB eMMC storage. PAC-6070 equips an array of features, these include 4 A/D differential channels, 8 digital inputs channels, and 8 reply outputs. In addition, PAC-6070 integrates 2 of 10/100Mbps Ethernet ports, 1 isolated RS-485 port, 1 USB host internet, 1 Micro SD card socket, and 1 miniPCIe slot. The inclusion of a DIN-rail enhances the flexible of onsite installation for PAC-6070."
+
+  - type: "list"
+    items:
+      - "NXP i.MX6ULL Cortex-A7 CPU, Up to 800MHz"
+      - "1GB LvDDR3 SDRAM, 16GB eMMC"
+      - "2 x 10/100Mbps Ethernet Interface"
+      - "1 x RS-485 Serial Port"
+      - "1 x Full Size miniPCIe Socket Inside,1 x Micro-SIM Slot Reserved"
+      - "8 x Opto-Isolated Digital Inputs"
+      - "8 x Relay Outputs"
+      - "5 x 24-bits A/D Channels"
+      - "Easy for DIN-Rail Mounting"
+
+  - type: "paragraph"
+    text: "These extensive features <a href='en/products/industrial-iot-controller/pac-6070' target='_blank'>PAC-6070</a> as an ideal choice for industrial IoT applications that required high-speed networking capabilities, its applications span industrial automation, workstation, and other bandwidth-intensive tasks."
+
+  - type: "paragraph"
+    text: "PAC-6070 features a rugged design with wide-range power input +9VDC ~ +48VDC enabling it to withstand extreme operating temperatures (-20°C to +70°C). It comes with a Linux-ready platform can be developed and adapted to fit into various systems with stable transmission."
+
+  - type: "paragraph"
+    text: "Artila is a well-established provider of Industrial IoT( IIoT) hardware and software solutions for industrial and automation applications. Our commitment to our customers includes long-term product availability beyond 5 years and technical support."
+
+  - type: "paragraph"
+    text: "For more information regarding <a href='en/products/industrial-iot-controller/pac-6070' target='_blank'>PAC-6070</a> or other Artila products, please visit www.artila.com, or email to sales@artila.com."
