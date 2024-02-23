@@ -1,0 +1,65 @@
+html_title: "Industrial SoM for Ticket Vending Machine"
+page_title: "Industrial SoM allows ticket vending machine to stably operate for a long time"
+
+content:
+  - type: "main_image"
+    src: "images/appstory02-1.jpg"
+    alt: "Ticket Vending Machine"
+
+  - type: "header"
+    level: 3
+    text: "Introduction"
+  
+  - type: "paragraph"
+    text: "With the progress of science and technology, high-tech services can be seen everywhere in modern people's daily life. For example, one of the frequently used applications is ticket vending machine for automatic issuing ticket. In terms of the transportation sector, passengers can use the ticket vending machine in the subway station, train station or high speed rail station to quickly purchase tickets. Managers can also take advantage of such machine to reduce the staff workload at ticket counters while relieving the influx of passengers during peak periods."
+  
+  - type: "paragraph"
+    text: "However, a fully functional ticket vending machine usually has to configure a wide variety of hardware devices (including card reader, thermal printer, password keyboard, network modem, etc.) in order to provide various payments to suit passengers’ needs. Moreover, the machine must offers ticket selling services for year-round operation. Accordingly, the pros and cons of computing platform play a key role to ensure that the system can operate smoothly with long-term stability."
+
+  - type: "header"
+    level: 3
+    text: "Artila’s Product & Advantage"
+  
+  - type: "paragraph"
+    text: "Artila Electronics M-501 is an industrial System on Module (SoM) based on ARM + Linux architecture. Using ARM processor makes this product has the advantages of high performance and low power consumption. The M-501 also has excellent stability, thanks to the lean Linux Operating System which is extremely difficult to crash. In addition, the business card-sized M-501 not only facilitates developers to embed it into the space limited machine but also enables system integrators or equipment manufacturers to develop automatic ticket vending machine in a modular way. The M-501 only uses semiconductor integrated circuits and passive components, and does not have the easy-to-damage heat dissipation devices and mechanical components (e.g. fan and hard drive). Such design significantly reduces the repair rate of this product. Meanwhile, its long product longevity (at least five years) reduces the customer's material preparation costs. In addition to offering the full-featured M-501 to take the great responsibility of computing platform, Artila Electronics gives users the product-related hardware layout, software libraries, technical support and other services. It makes designers much easier and faster to get started on their projects as well as shortening the development time. If the project requires a customized industrial-grade SoM, Artila Electronics can also provide the relevant exclusive services."
+
+  - type: "header"
+    level: 3
+    text: "Features"
+  
+  - type: "list"
+    items:
+      - "Processor: ATMEL 180MHz AT91RM9200 CPU w / MMU"
+      - "Operating System: Linux kernel 2.6.14 with file system"
+      - "Interfaces: 4 x 921.6Kbps UARTs w / hardware flow control"
+      - "Universal Input and Output: 32 x GPIOs, CMOS / 3.3V compatible"
+      - "Ultra low power consumption of less than 2.5W"
+      - "Pre-installed Utilities (including bash, busybox, wget, boa, iptable, ppp, ssh, wireless_tools and Artila utility)"
+      - "Daemons Started by Default: ssh (secured shell), syslog / klogd (system and kernel log), telnet server (disable root with / etc / security), ftp server (vsftp), Web server (lighttpd), amgrd (Artila broadcast search daemon)"
+
+  - type: "header"
+    level: 3
+    text: "Description"
+  
+  - type: "paragraph"
+    text: "The customer of this project is a System Integrator supplying electronic payment terminals and equipments. The company was developing the round-the-clock multi-functional ticket vending machine, so it required a computing platform that meets its needs. This equipment is an embedded application applied to the public field. Since an industrial-grade computing platform is a basic requirement to ensure system stability, the traditional commercial computers are excluded from the company’s options. The electronic payment terminal requires using the special financial communication interfaces and its internal space is quite limited, in consequence, the general single-board computer which needs to insert additional interface card could not possibly be installed into the limited space. Besides, the System Integrator would like to directly embed the board behind the screen and flexibly modularize system functions. Therefore, the industrial-grade SoM M-501 of Artila Electronics is the most suitable embedded computing platform to meet its requirements. With ATMEL industrial processor, Linux Operating System, four COM ports and free drivers, the M-501 can successfully perform various financial payment operations of ticket vending machine. At just 80x50mm in size, the SoM is quite easy to integrate with the screen, System Integrators board, thermal printer and other hardware devices. Using ARM processor makes this embedded computing platform consume very little power (less than 2.5W), and do not need to use a separate power supply to power it. Unlike Windows Operating System which contains a lot of programs that are not needed but occupies system resources, Linux only offers kernel allowing application systems to be executed stably under a simplified environment. Additionally, there are many free drivers for Linux due to its open source features. When the customer requires a special driver for the application system, Artila Electronics would test the driver first without any charge before providing to customer, so as to ensure that the system does not have compatibility problems."
+
+  - type: "header"
+    level: 3
+    text: "Diagram"
+  
+  - type: "image"
+    src: "images/appstory02-2.jpg"
+    alt: "System Diagram"
+
+  - type: "header"
+    level: 3
+    text: "Related Products"
+  
+  - type: "product"
+    products:
+      - title: "M-501"
+        link: "http://www.artila.com/en/p_som.html#M-501"
+        description: "ATMEL 9200, Linux-ready ARM System On Module"
+        image: "images/appstory02-1.jpg"
+        alt: "M-501"

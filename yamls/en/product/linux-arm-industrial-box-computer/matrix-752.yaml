@@ -1,19 +1,21 @@
-# matrix752.yaml
+# part1
 html_title: "Matrix-752"
 page_title: "Matrix-752"
 product: "Matrix-752"
 family: "Linux ARM Industrial Box Computer"
 family_page: "linux-arm-industrial-box-computer"
-description: Linux-ready Cortex-A7 Highly Integrated Industrial IoT Gateway
-image_source: images/products/Matrix-752.jpg
-image_alt: Artila Linux Computer Matrix-752
+description: "Linux-ready Cortex-A7 Industrial IoT Gateway"
+image_source: "images/products/Matrix-752.jpg"
+image_alt: "Artila Linux Computer Matrix-752"
 
+# part2
 files:
-  Data Sheet: docs/Matrix-752/Matrix-752_Datasheet.pdf
-  Hardware Guide: docs/Matrix-752/Matrix-752_Hardware_Guide.pdf
-  Software Guide: docs/Matrix-752/Matrix-752_Software_Guide.pdf
-  Resource Link: http://www.artila.com/download/imx6ul/linux/
+  Data Sheet: "docs/Matrix-752/Matrix-752_Datasheet.pdf"
+  Hardware Guide: "docs/Matrix-752/Matrix-752_Hardware_Guide.pdf"
+  Software Guide: "docs/Matrix-752/Matrix-752_Software_Guide.pdf"
+  Resource Link: "http://www.artila.com/download/imx6ul/linux/"
 
+# part3
 features:
   title: "Features"
   details:
@@ -31,7 +33,8 @@ features:
     - "1 x Micro-SD Slot Reserved"
     - "Ultra-Low Power Consumption"
 
-datasheet:
+# part4
+datasheet: 
   - "hw_specifications"
   - "sw_specifications"
   - "ordering_information"
@@ -39,7 +42,7 @@ datasheet:
 hw_specifications:
   title: "H/W Specifications"
   sections:
-    "CPU Memory":
+    "CPU / Memory":
       - "CPU: NXP i.MX6ULL Cortex-A7 MPCore, Up to 800MHz"
       - "SDRAM: 512MB, LvDDR3"
       - "Flash: 16GB, eMMC"
@@ -49,19 +52,19 @@ hw_specifications:
     "USB Interface":
       - "1 x USB OTG Port"
       - "microUSB connector"
-    "TTY Port":
+    "TTY (Serial) Port":
       - "Two Serial port"
       - "Port 1: 1 x RS-485 or RS-232"
       - "Port 2: 1 x RS-232"
       - "Connector: Terminal block"
       - "RS-485 Signal: Data+, Data-"
       - "Direction Control: Auto, by software"
-      - "RS-232 Signal: TX1, RX1 and TX2 , RX2"
+      - "RS-232 Signal: TX1, RX1 and TX2, RX2"
     "CAN Bus Ports":
       - "Type: 1 x CAN bus 2.0 A/B compliant ports"
       - "Speed: Up to 1Mbps"
       - "Isolation: 2500Vrms"
-    "Console Debug Ports":
+    "Console / Debug Ports":
       - "Serial console port (inside the box)"
     "Digital Input":
       - "2 x Digital Input channels"
@@ -78,17 +81,16 @@ hw_specifications:
       - "Storage capacity: support up to 128G"
     "Expansion":
       - "1 x miniPCIe Full-size socket"
-      - "1 x micro-SIM card socket , USB interface reserved"
+      - "1 x micro-SIM card socket, USB interface reserved"
       - "2 x SMA-type Antenna hole reserved"
     "General":
       - "Watchdog: Yes"
       - "Real-Time Clock (RTC): Yes, backup by super capacitor"
       - "Power Input Voltage: +9~+48VDC (terminal block)"
       - "Typical Consumption: 12VDC@250mA"
-      - "Dimensions (W x L x H): 89 x 112 x 30mm ( 3.5 x 4.4 x 1.18in)"
+      - "Dimensions (W x L x H): 89 x 112 x 30mm (3.5 x 4.4 x 1.18in)"
       - "Net Weight: 350g (0.77lb)"
-      - "Operating Temperature: 0 ~ ~70°C (32~158°F)"
-      - "Typical Consumption: 12VDC@250mA"
+      - "Operating Temperature: 0 ~ 70°C (32~158°F)"
       - "Regulation: CE Class A, FCC Class A"
       - "Installation: Wall mounting, DIN-rail mounting (with optional kit)"
 
